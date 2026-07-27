@@ -5,7 +5,7 @@ import { LogoLight } from "./Logo";
 export default function Footer() {
   return (
     <footer className="bg-navy-deep">
-      <div className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-4 gap-10">
+      <div className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-10">
         <div>
           <LogoLight />
           <p className="text-sm text-slate-300 mt-4 leading-relaxed max-w-xs">
@@ -13,14 +13,14 @@ export default function Footer() {
             products and confident market access.
           </p>
           <div className="flex gap-3 mt-5">
-            <a
+            
               href="#"
               className="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center text-white/80 hover:text-white hover:border-white transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin size={16} />
             </a>
-            <a
+            
               href="mailto:info@toxentra.com"
               className="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center text-white/80 hover:text-white hover:border-white transition-colors"
               aria-label="Email"
@@ -36,19 +36,7 @@ export default function Footer() {
           <ul className="space-y-2.5 text-sm text-slate-300">
             <li><Link href="/about" className="hover:text-white">About Us</Link></li>
             <li><Link href="/services" className="hover:text-white">Services</Link></li>
-            <li><Link href="#" className="hover:text-white">Projects</Link></li>
             <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
-          </ul>
-        </div>
-        <div>
-          <h4 className="text-xs font-semibold tracking-widest uppercase text-white mb-4">
-            Scientific Resources
-          </h4>
-          <ul className="space-y-2.5 text-sm text-slate-300">
-            <li><Link href="#" className="hover:text-white">Guidelines</Link></li>
-            <li><Link href="#" className="hover:text-white">Regulatory Updates</Link></li>
-            <li><Link href="#" className="hover:text-white">Scientific Articles</Link></li>
-            <li><Link href="#" className="hover:text-white">Tools &amp; Databases</Link></li>
           </ul>
         </div>
         <div>
