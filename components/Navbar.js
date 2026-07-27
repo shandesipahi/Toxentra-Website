@@ -2,15 +2,13 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X, ChevronDown, ArrowRight } from "lucide-react";
+import { Menu, X, ArrowRight } from "lucide-react";
 import { LogoDark } from "./Logo";
 
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
   { label: "Services", href: "/services" },
-  { label: "Scientific Resources", href: "#", dropdown: true },
-  { label: "Projects", href: "#" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -33,7 +31,6 @@ export default function Navbar({ active }) {
               }`}
             >
               {l.label}
-              {l.dropdown && <ChevronDown size={14} />}
             </Link>
           ))}
         </nav>
