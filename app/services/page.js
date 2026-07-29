@@ -33,7 +33,8 @@ const services = [
     n: "2",
     icon: Microscope,
     title: "Biological Evaluation (ISO 10993)",
-    text: "Biological evaluation and biocompatibility services in accordance with ISO 10993 standards.",
+    text: "Biological evaluation and biocompatibility services in accordance with ISO 10993 standards. Biological Evaluation Supporting Safe Medical Devices — scientific support for biological evaluation and biocompatibility according to ISO 10993.",
+    href: "/services/biological-evaluation-iso-10993",
   },
   {
     n: "3",
@@ -186,7 +187,7 @@ export default function ServicesPage() {
                 ) : (
                   <p className="text-sm text-slate-600 leading-relaxed mb-4 flex-1">{s.text}</p>
                 )}
-                <Link href="#" className="inline-flex items-center gap-1.5 text-sm font-semibold text-green-dark">
+                <Link href={s.href || "#"} className="inline-flex items-center gap-1.5 text-sm font-semibold text-green-dark">
                   Learn More <ArrowRight size={15} />
                 </Link>
               </div>
