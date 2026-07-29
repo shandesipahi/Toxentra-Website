@@ -14,19 +14,21 @@ export default function Footer() {
           </p>
           <div className="flex gap-3 mt-5">
             
-              href="#"
+              href="https://www.linkedin.com/company/toxentra-r-d-and-consulting-ltd/posts/?feedView=all"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center text-white/80 hover:text-white hover:border-white transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin size={16} />
             </a>
-            
-              href="mailto:info@toxentra.com"
+            <Link
+              href="/contact#form"
               className="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center text-white/80 hover:text-white hover:border-white transition-colors"
-              aria-label="Email"
+              aria-label="Contact us"
             >
               <Mail size={16} />
-            </a>
+            </Link>
           </div>
         </div>
         <div>
