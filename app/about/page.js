@@ -245,17 +245,17 @@ export default function AboutPage() {
             {stats.map((s) => {
               const Icon = s.icon;
               return (
-                <div key={s.big} className="bg-white rounded-2xl p-6 shadow-sm border border-black/5">
-                  <div className="w-11 h-11 rounded-full flex items-center justify-center mb-4 border border-green text-green">
-                    <Icon size={20} />
+                <div key={s.big} className="bg-white rounded-2xl p-7 shadow-sm border border-black/5">
+                  <div className="w-12 h-12 rounded-full flex items-center justify-center mb-5 border border-green text-green">
+                    <Icon size={22} />
                   </div>
-                  <div className={`font-bold text-lg mb-1 text-navy-deep ${s.label ? "font-serif" : ""}`}>
+                  <div className={`font-extrabold mb-2 text-green tracking-tight ${s.label ? "text-4xl" : "text-xl leading-snug"}`}>
                     {s.big}
                   </div>
                   {s.label && (
-                    <div className="text-xs font-semibold text-slate-500 mb-2">{s.label}</div>
+                    <div className="text-sm font-bold text-navy-deep mb-3 leading-snug">{s.label}</div>
                   )}
-                  <p className="text-xs text-slate-500 leading-relaxed">{s.text}</p>
+                  <p className="text-sm text-slate-500 leading-relaxed">{s.text}</p>
                 </div>
               );
             })}
