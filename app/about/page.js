@@ -124,8 +124,8 @@ export default function AboutPage() {
       <Navbar active="About Us" />
 
       {/* HERO */}
-      <section className="max-w-7xl mx-auto px-6 pt-16 pb-20 grid lg:grid-cols-12 gap-10 items-center">
-        <div className="lg:col-span-5">
+      <section className="max-w-7xl mx-auto px-6 pt-16 pb-20 grid md:grid-cols-2 gap-14 items-center">
+        <div>
           <Eyebrow>ABOUT TOXENTRA</Eyebrow>
           <h1 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6">
             <span className="text-navy-deep">Independent Science.</span>
@@ -151,7 +151,7 @@ export default function AboutPage() {
         </div>
 
         <div
-          className="relative rounded-2xl overflow-hidden p-6 md:p-8 lg:col-span-7"
+          className="relative rounded-2xl overflow-hidden p-8 md:p-10"
           style={{ background: "linear-gradient(135deg, #0E2933 0%, #173B4A 100%)" }}
         >
           {/* scientific molecular-node backdrop */}
@@ -174,47 +174,23 @@ export default function AboutPage() {
             ))}
           </svg>
 
-          <div className="relative flex flex-col sm:flex-row gap-5">
-            {/* Report mockup card */}
-            <div className="w-full max-w-[240px] bg-white rounded-md shadow-xl p-6 relative shrink-0 mx-auto sm:mx-0" style={{ minHeight: 320 }}>
-              <Image src="/logo.png" alt="TOXENTRA" width={96} height={20} className="h-5 w-auto mb-6" />
-              <h3 className="text-lg font-bold font-serif leading-tight mb-2 text-navy-deep">
-                TOXICOLOGICAL
-                <br />
-                RISK ASSESSMENT
-              </h3>
-              <p className="text-xs text-slate-500 mb-6">Science. Evaluation. Confidence.</p>
-              <ul className="space-y-1 text-xs text-slate-600">
-                {["ISO 10993", "ICH", "EMA", "FDA", "OECD"].map((t) => (
-                  <li key={t}>{t}</li>
-                ))}
-              </ul>
-              <svg className="absolute bottom-0 left-0 w-full opacity-70" height="50" viewBox="0 0 400 60" preserveAspectRatio="none">
-                <path d="M0,40 C100,10 300,60 400,20 L400,60 L0,60 Z" fill="#2E8B57" opacity="0.15" />
-              </svg>
-            </div>
-
-            {/* Stats stack */}
-            <div className="grid grid-cols-2 sm:grid-cols-1 gap-4 flex-1">
-              {stats.map((s) => {
-                const Icon = s.icon;
-                return (
-                  <div key={s.big} className="bg-white rounded-xl p-4 shadow-xl flex items-center gap-3">
-                    <div className="w-9 h-9 rounded-full flex items-center justify-center shrink-0 border border-green text-green">
-                      <Icon size={16} />
-                    </div>
-                    <div>
-                      <div className={`font-extrabold leading-none text-green tracking-tight ${s.label ? "text-xl" : "text-sm leading-snug"}`}>
-                        {s.big}
-                      </div>
-                      {s.label && (
-                        <div className="text-[11px] font-bold text-navy-deep mt-1 leading-snug">{s.label}</div>
-                      )}
-                    </div>
+          <div className="relative grid grid-cols-2 gap-5">
+            {stats.map((s) => {
+              const Icon = s.icon;
+              return (
+                <div key={s.big} className="bg-white rounded-2xl p-6 md:p-7 shadow-xl aspect-square flex flex-col justify-center">
+                  <div className="w-12 h-12 rounded-full flex items-center justify-center mb-4 border border-green text-green">
+                    <Icon size={22} />
                   </div>
-                );
-              })}
-            </div>
+                  <div className={`font-extrabold mb-2 text-green tracking-tight ${s.label ? "text-3xl md:text-4xl" : "text-xl leading-snug"}`}>
+                    {s.big}
+                  </div>
+                  {s.label && (
+                    <div className="text-sm font-bold text-navy-deep leading-snug">{s.label}</div>
+                  )}
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -261,28 +237,52 @@ export default function AboutPage() {
 
       {/* OUR STORY */}
       <section className="bg-white/60 border-y border-black/5">
-        <div className="max-w-3xl mx-auto px-6 py-20">
-          <Eyebrow>OUR STORY</Eyebrow>
-          <h2 className="text-3xl md:text-[2.25rem] font-bold font-serif mt-3 mb-6 leading-tight text-navy-deep">
-            Science at the Core, Impact in Every Decision.
-          </h2>
-          <div className="space-y-4 text-slate-600 leading-relaxed text-sm">
-            <p>
-              Toxentra was founded by toxicologists and regulatory experts
-              with over 20 years of combined experience in academia,
-              industry and regulatory environments.
-            </p>
-            <p>
-              We understand the complexity of bringing products to
-              market—and the critical importance of safety assessment at
-              every step.
-            </p>
-            <p>
-              Our multidisciplinary team combines deep scientific
-              knowledge with practical regulatory insight to deliver
-              strategic, reliable and customized solutions for our
-              clients.
-            </p>
+        <div className="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-14 items-start">
+          <div>
+            <Eyebrow>OUR STORY</Eyebrow>
+            <h2 className="text-3xl md:text-[2.25rem] font-bold font-serif mt-3 mb-6 leading-tight text-navy-deep">
+              Science at the Core, Impact in Every Decision.
+            </h2>
+            <div className="space-y-4 text-slate-600 leading-relaxed text-sm">
+              <p>
+                Toxentra was founded by toxicologists and regulatory experts
+                with over 20 years of combined experience in academia,
+                industry and regulatory environments.
+              </p>
+              <p>
+                We understand the complexity of bringing products to
+                market—and the critical importance of safety assessment at
+                every step.
+              </p>
+              <p>
+                Our multidisciplinary team combines deep scientific
+                knowledge with practical regulatory insight to deliver
+                strategic, reliable and customized solutions for our
+                clients.
+              </p>
+            </div>
+          </div>
+          <div
+            className="relative rounded-2xl overflow-hidden shadow-2xl p-10 md:p-14 flex justify-center"
+            style={{ background: "linear-gradient(135deg, #EDE7DA 0%, #F7F3EA 50%, #E4DED0 100%)" }}
+          >
+            <div className="w-full max-w-sm bg-white rounded-md shadow-xl p-8 relative" style={{ minHeight: 360 }}>
+              <Image src="/logo.png" alt="TOXENTRA" width={112} height={24} className="h-6 w-auto mb-8" />
+              <h3 className="text-2xl font-bold font-serif leading-tight mb-2 text-navy-deep">
+                TOXICOLOGICAL
+                <br />
+                RISK ASSESSMENT
+              </h3>
+              <p className="text-sm text-slate-500 mb-8">Science. Evaluation. Confidence.</p>
+              <ul className="space-y-1.5 text-sm text-slate-600">
+                {["ISO 10993", "ICH", "EMA", "FDA", "OECD"].map((t) => (
+                  <li key={t}>{t}</li>
+                ))}
+              </ul>
+              <svg className="absolute bottom-0 left-0 w-full opacity-70" height="60" viewBox="0 0 400 60" preserveAspectRatio="none">
+                <path d="M0,40 C100,10 300,60 400,20 L400,60 L0,60 Z" fill="#2E8B57" opacity="0.15" />
+              </svg>
+            </div>
           </div>
         </div>
       </section>
