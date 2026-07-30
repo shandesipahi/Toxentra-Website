@@ -152,11 +152,21 @@ export default function AboutPage() {
 
         <div
           className="relative rounded-2xl overflow-hidden p-8 md:p-10"
-          style={{ background: "linear-gradient(135deg, #0E2933 0%, #173B4A 100%)" }}
+          style={{ background: "linear-gradient(145deg, #0E2933 0%, #16394A 45%, #1B4A42 100%)" }}
         >
+          {/* soft green glow accents */}
+          <div
+            className="absolute -top-16 -right-16 w-64 h-64 rounded-full pointer-events-none"
+            style={{ background: "radial-gradient(circle, rgba(46,139,87,0.35) 0%, rgba(46,139,87,0) 70%)" }}
+          />
+          <div
+            className="absolute -bottom-20 -left-10 w-72 h-72 rounded-full pointer-events-none"
+            style={{ background: "radial-gradient(circle, rgba(46,139,87,0.18) 0%, rgba(46,139,87,0) 70%)" }}
+          />
+
           {/* scientific molecular-node backdrop */}
           <svg
-            className="absolute inset-0 w-full h-full opacity-25 pointer-events-none"
+            className="absolute inset-0 w-full h-full opacity-20 pointer-events-none"
             viewBox="0 0 500 500"
             preserveAspectRatio="xMidYMid slice"
           >
@@ -167,22 +177,28 @@ export default function AboutPage() {
             ].map(([x, y], i, arr) => (
               <g key={i}>
                 {i < arr.length - 1 && (
-                  <line x1={x} y1={y} x2={arr[i + 1][0]} y2={arr[i + 1][1]} stroke="#2E8B57" strokeWidth="1.2" />
+                  <line x1={x} y1={y} x2={arr[i + 1][0]} y2={arr[i + 1][1]} stroke="#2E8B57" strokeWidth="1" />
                 )}
-                <circle cx={x} cy={y} r={i % 3 === 0 ? 5 : 3} fill={i % 2 === 0 ? "#2E8B57" : "#FFFFFF"} />
+                <circle cx={x} cy={y} r={i % 3 === 0 ? 4.5 : 2.5} fill={i % 2 === 0 ? "#2E8B57" : "#FFFFFF"} />
               </g>
             ))}
           </svg>
 
-          <div className="relative grid grid-cols-2 gap-5">
+          {/* subtle top border sheen */}
+          <div
+            className="absolute top-0 left-0 w-full h-px pointer-events-none"
+            style={{ background: "linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent)" }}
+          />
+
+          <div className="relative grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
             {stats.map((s) => {
               const Icon = s.icon;
               return (
-                <div key={s.big} className="bg-white rounded-2xl p-6 md:p-7 shadow-xl aspect-square flex flex-col justify-center">
-                  <div className="w-12 h-12 rounded-full flex items-center justify-center mb-4 border border-green text-green">
-                    <Icon size={22} />
+                <div key={s.big} className="bg-white rounded-2xl p-5 sm:p-6 md:p-7 shadow-xl sm:aspect-square flex flex-col justify-center">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center mb-3 sm:mb-4 border border-green text-green">
+                    <Icon size={20} />
                   </div>
-                  <div className={`font-extrabold mb-2 text-green tracking-tight ${s.label ? "text-3xl md:text-4xl" : "text-xl leading-snug"}`}>
+                  <div className={`font-extrabold mb-1.5 sm:mb-2 text-green tracking-tight ${s.label ? "text-2xl sm:text-3xl md:text-4xl" : "text-lg sm:text-xl leading-snug"}`}>
                     {s.big}
                   </div>
                   {s.label && (
