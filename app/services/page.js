@@ -34,7 +34,7 @@ const services = [
     n: "2",
     icon: Microscope,
     title: "Biological Evaluation (ISO 10993)",
-    text: "Biological evaluation and biocompatibility services in accordance with ISO 10993 standards. Biological Evaluation Supporting Safe Medical Devices — scientific support for biological evaluation and biocompatibility according to ISO 10993.",
+    text: "Biological evaluation and biocompatibility services in accordance with ISO 10993 standards.",
     href: "/services/biological-evaluation-iso-10993",
   },
   {
@@ -178,7 +178,11 @@ export default function ServicesPage() {
           {services.map((s) => {
             const Icon = s.icon;
             return (
-              <div key={s.n} className="bg-white rounded-2xl border border-black/5 p-7 hover:shadow-lg transition-all flex flex-col">
+              <Link
+                key={s.n}
+                href={s.href || "#"}
+                className="bg-white rounded-2xl border border-black/5 p-7 hover:shadow-lg hover:-translate-y-0.5 transition-all flex flex-col"
+              >
                 <IconCircle Icon={Icon} />
                 <h3 className="font-semibold text-base mb-2 leading-snug text-navy-deep">
                   {s.n}. {s.title}
@@ -195,10 +199,10 @@ export default function ServicesPage() {
                 ) : (
                   <p className="text-sm text-slate-600 leading-relaxed mb-4 flex-1">{s.text}</p>
                 )}
-                <Link href={s.href || "#"} className="inline-flex items-center gap-1.5 text-sm font-semibold text-green-dark">
+                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-green-dark">
                   Learn More <ArrowRight size={15} />
-                </Link>
-              </div>
+                </span>
+              </Link>
             );
           })}
         </div>
