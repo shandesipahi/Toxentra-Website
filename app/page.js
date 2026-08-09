@@ -57,7 +57,7 @@ const services = [
   {
     icon: Scale,
     title: "Regulatory Consulting",
-    text: "Managing compliance with national and international regulations for pharmaceuticals, medical devices and related sectors.",
+    text: "Supporting compliance with national and international regulations for pharmaceuticals, medical devices and related sectors.",
   },
   {
     icon: Microscope,
