@@ -78,7 +78,7 @@ export default function HomePage() {
   return (
     <div dir="rtl" lang="ar" className="font-arabic">
     <>
-      <Navbar active="الرئيسية" />
+      <Navbar active="home" locale="ar" />
 
       {/* HERO */}
       <section className="relative overflow-hidden">
