@@ -135,7 +135,7 @@ export default function ServicesPage() {
   return (
     <div dir="rtl" lang="ar" className="font-arabic">
     <>
-      <Navbar active="خدماتنا" />
+      <Navbar active="services" locale="ar" />
 
       {/* HERO */}
       <section className="max-w-7xl mx-auto px-6 pt-16 pb-16 grid md:grid-cols-2 gap-14 items-center">
