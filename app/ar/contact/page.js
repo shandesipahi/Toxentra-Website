@@ -1,4 +1,4 @@
-import ContactForm from "./ContactForm";
+import ContactForm from "../../contact/ContactForm";
 import { Mail, MapPin, Clock, MessageCircle, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import Navbar from "../../../components/Navbar";
