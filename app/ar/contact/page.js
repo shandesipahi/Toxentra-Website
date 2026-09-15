@@ -28,7 +28,7 @@ export default function ContactPage() {
   return (
     <div dir="rtl" lang="ar" className="font-arabic">
     <>
-      <Navbar active="تواصل معنا" />
+      <Navbar active="contact" locale="ar" />
 
       <section className="max-w-7xl mx-auto px-6 pt-16 pb-16 grid lg:grid-cols-2 gap-14 items-start">
         {/* Left column */}
