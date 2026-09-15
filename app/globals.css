@@ -9,3 +9,13 @@ html {
 body {
   background-color: #faf8f3;
 }
+
+.font-arabic {
+  font-family: "Segoe UI", Tahoma, Geneva, Arial, "Noto Sans Arabic", sans-serif;
+}
+
+.font-arabic h1,
+.font-arabic h2,
+.font-arabic h3 {
+  font-family: "Segoe UI", Tahoma, Geneva, Arial, "Noto Sans Arabic", sans-serif;
+}
