@@ -122,7 +122,7 @@ export default function AboutPage() {
   return (
     <div dir="rtl" lang="ar" className="font-arabic">
     <>
-      <Navbar active="من نحن" />
+      <Navbar active="about" locale="ar" />
 
       {/* HERO */}
       <section className="max-w-7xl mx-auto px-6 pt-16 pb-20 grid md:grid-cols-2 gap-14 items-center">
