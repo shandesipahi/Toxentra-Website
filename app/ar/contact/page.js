@@ -5,9 +5,9 @@ import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 
 export const metadata = {
-  title: "اتصل بنا — TOXENTRA",
+  title: "Contact — TOXENTRA",
   description:
-    "هل لديك سؤال أو تحتاج إلى دعم متخصص؟ تواصل مع Toxentra وسيقوم فريقنا بالرد عليك في أقرب وقت ممكن.",
+    "Have a question or need expert support? Reach out to Toxentra and our team will get back to you promptly.",
 };
 
 const contactInfo = [
