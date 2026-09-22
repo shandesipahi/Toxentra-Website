@@ -19,11 +19,11 @@ const trustPoints = [
   {
     icon: ShieldCheck,
     title: "التميّز العلمي",
-    text: "خبرة معتمدة من ERT، مدعومة بالبحث الأكاديمي والخبرة العملية في المجال التنظيمي.",
+    text: "ERT-certified expertise supported by academic research and hands-on regulatory experience.",
   },
   {
     icon: FileText,
-    title: "الخبرة التنظيمية",
+    title: "معرفة بالمتطلبات التنظيمية",
     text: "معرفة شاملة بالمتطلبات التنظيمية العالمية بما يتوافق مع أطر EMA وFDA وOECD وISO وICH.",
   },
   {
@@ -46,23 +46,23 @@ const trustPoints = [
 const services = [
   {
     icon: FlaskConical,
-    title: "التقييم السُّمّي",
-    text: "تقييم علمي للمخاطر الصحية المحتملة المرتبطة بمنتجاتكم، من المواد الخام إلى التركيبة النهائية.",
+    title: "Toxicological Assessment",
+    text: "Scientific evaluation of the potential health risks associated with your products, from raw material to finished formulation.",
   },
   {
     icon: ClipboardCheck,
-    title: "استشارات سلامة المنتجات",
-    text: "إعداد وتقييم وثائق السلامة لمنتجات التجميل والكيميائية والمكملات الغذائية.",
+    title: "Product Safety Consulting",
+    text: "Preparation and evaluation of safety documentation for cosmetic, chemical and nutraceutical products.",
   },
   {
     icon: Scale,
-    title: "الاستشارات التنظيمية",
-    text: "إدارة الامتثال للوائح الوطنية والدولية الخاصة بالأدوية والأجهزة الطبية والقطاعات ذات الصلة.",
+    title: "Regulatory Consulting",
+    text: "Managing compliance with national and international regulations for pharmaceuticals, medical devices and related sectors.",
   },
   {
     icon: Microscope,
-    title: "استشارات البحث والتطوير",
-    text: "دعم علمي وتقني طوال دورة تطوير منتجكم، من الفكرة وحتى التقديم.",
+    title: "R&D Consulting",
+    text: "Scientific and technical support throughout your product development lifecycle, from concept to submission.",
   },
 ];
 
@@ -102,15 +102,16 @@ export default function HomePage() {
 
         <div className="relative max-w-7xl mx-auto px-6 pt-16 pb-20 md:pt-20 md:pb-24 grid md:grid-cols-2 gap-14 items-center">
           <div>
-            <Eyebrow>Toxicology &amp; Regulatory Consulting</Eyebrow>
+            <Eyebrow>Toxicology &amp; Product Safety Consulting</Eyebrow>
             <h1 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6">
-              <span className="text-navy-deep">شريككم في العلم،</span><br />
-              <span className="text-green">السلامة</span>
-              <span className="text-navy-deep">، والاعتماد.</span>
+              <span className="text-navy-deep">Your partner in</span><br />
+              <span className="text-navy-deep">science, </span>
+              <span className="text-green">safety</span>
+              <span className="text-navy-deep">, and approval.</span>
             </h1>
             <div className="w-14 h-[3px] mb-6 bg-green" />
             <p className="text-slate-600 leading-relaxed mb-8 max-w-lg">
-              TOXENTRA delivers toxicology, product safety and regulatory
+              TOXENTRA provides toxicology, product safety and scientific
               consulting for the pharmaceutical, medical device, cosmetic,
               chemical and nutraceutical industries.
             </p>
@@ -222,12 +223,12 @@ export default function HomePage() {
           <div className="md:col-span-2">
             <Eyebrow>About TOXENTRA</Eyebrow>
             <h2 className="text-2xl md:text-3xl font-bold font-serif mt-3 mb-4 leading-tight text-navy-deep">
-              Where scientific rigor meets regulatory clarity
+              Where scientific rigor meets regulatory requirements.
             </h2>
             <p className="text-slate-600 leading-relaxed">
-              TOXENTRA brings together toxicological assessment, product
-              safety and regulatory strategy so your products reach the
-              market safely and in full compliance. Our team works alongside
+              TOXENTRA brings together toxicological assessment, product safety
+              and scientific evaluation to support evidence-based decisions
+              throughout product development. Our team works alongside
               R&amp;D, quality and regulatory affairs teams across the
               pharmaceutical, medical device, cosmetic, chemical and
               nutraceutical industries.
@@ -249,7 +250,7 @@ export default function HomePage() {
             Bring your product to market with confidence.
           </h2>
           <p className="text-slate-300 mb-8 max-w-xl mx-auto">
-            Tell us about your product and regulatory pathway — our team will
+            Tell us about your product and scientific needs— our team will
             get back to you to schedule a consultation.
           </p>
           <Link
