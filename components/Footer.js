@@ -4,7 +4,7 @@ import { LogoLight } from "./Logo";
 
 const LABELS = {
   en: {
-    tagline: "Independent toxicology and regulatory consulting for safer products and confident market access.",
+    tagline: "Independent toxicology and scientific solutions supporting product safety and evidence-based decision-making.",
     company: "Company",
     aboutUs: "About Us",
     services: "Services",
@@ -16,7 +16,7 @@ const LABELS = {
     terms: "Terms of Use",
   },
   tr: {
-    tagline: "Daha güvenli ürünler ve güvenilir pazara giriş için bağımsız toksikoloji ve regülasyon danışmanlığı.",
+    tagline: "Ürün güvenliğini ve kanıta dayalı karar alma süreçlerini destekleyen bağımsız toksikoloji ve bilimsel çözümler.",
     company: "Şirket",
     aboutUs: "Hakkımızda",
     services: "Hizmetler",
@@ -28,7 +28,7 @@ const LABELS = {
     terms: "Kullanım Koşulları",
   },
   ar: {
-    tagline: "استشارات مستقلة في علم السموم والشؤون التنظيمية لمنتجات أكثر أمانًا ودخول واثق إلى الأسواق.",
+    tagline: "حلول مستقلة في علم السموم والمجالات العلمية لدعم سلامة المنتجات واتخاذ القرارات القائمة على الأدلة.",
     company: "الشركة",
     aboutUs: "من نحن",
     services: "الخدمات",
