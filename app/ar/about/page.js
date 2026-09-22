@@ -21,9 +21,9 @@ import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 
 export const metadata = {
-  title: "من نحن — TOXENTRA",
+  title: "About Us — TOXENTRA",
   description:
-    "Toxentra هي شركة استشارية مستقلة في علم السموم والشؤون التنظيمية، مكرّسة لتعزيز سلامة المنتجات من خلال التميز العلمي.",
+    "Toxentra is an independent toxicology and regulatory consulting company dedicated to advancing product safety through scientific excellence.",
 };
 
 const values = [
@@ -39,7 +39,7 @@ const stats = [
     icon: Users,
     big: "20+",
     label: "عامًا من الخبرة المشتركة",
-    text: "خبرة متعمقة في علم السموم والعلوم التنظيمية.",
+    text: "خبرة واسعة في علم السموم.",
   },
   {
     icon: FlaskConical,
@@ -55,7 +55,7 @@ const stats = [
   },
   {
     icon: Globe2,
-    big: "خبرة عالمية في الشؤون التنظيمية",
+    big: "مؤلف لمنشورات علمية دولية",
     label: "",
     text: "وفقًا لإرشادات EMA وFDA وOECD وICH وISO وSCCS وغيرها من الإرشادات الدولية.",
   },
@@ -71,12 +71,12 @@ const whatWeDo = [
   [
     "تقييم المخاطر البيئية (ERA)",
     "تقييم QSAR وRead-Across",
-    "التقارير العلمية والتنظيمية",
+    "التقارير العلمية والسُّمّية",
     "اليقظة الدوائية",
   ],
   [
     "تصميم استراتيجيات الاختبار",
-    "إدارة الدراسات المخبرية بالتعاون مع شركاء موثوقين",
+    "تنسيق الدراسات المخبرية بالتعاون مع شركاء خارجيين",
   ],
 ];
 
@@ -106,7 +106,7 @@ const research = [
 const leadership = [
   "اختصاصي سموم أوروبي مسجّل (ERT)",
   "باحث أكاديمي وعضو هيئة تدريس جامعي",
-  "باحث ومؤلف علمي دولي",
+  "مؤلف لمنشورات علمية دولية",
   "خبير في تقييم المخاطر السُّمّية، وسلامة الأجهزة الطبية، وعلم السموم التنظيمي",
 ];
 
@@ -131,23 +131,22 @@ export default function AboutPage() {
           <h1 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6">
             <span className="text-navy-deep">Independent Science.</span>
             <br />
-            <span className="text-navy-deep">Regulatory Confidence.</span>
+            <span className="text-navy-deep">Evidence-Based Solutions.</span>
             <br />
             <span className="text-green">Safer Products.</span>
           </h1>
           <div className="w-14 h-[3px] mb-6 bg-green" />
           <p className="text-slate-600 leading-relaxed mb-5">
-            Toxentra is an independent toxicology and regulatory consulting
-            company dedicated to advancing product safety through scientific
-            excellence, evidence-based decision making, and international
-            regulatory expertise.
+            Toxentra is an independent toxicology consulting company dedicated to
+            advancing product safety through a scientific approach,
+            evidence-based decision-making, and alignment with international
+            regulations.
           </p>
           <p className="text-slate-600 leading-relaxed">
             We support pharmaceutical, medical device, cosmetics, chemical
-            and biotechnology companies throughout the entire product
-            lifecycle—from early development and testing strategy to
-            toxicological risk assessment, regulatory documentation and
-            market approval.
+            and biotechnology companies throughout the product
+            lifecycle—from product development and testing strategies to
+            toxicological risk assessment and safety evaluation.
           </p>
         </div>
 
@@ -220,9 +219,9 @@ export default function AboutPage() {
           </div>
           <h3 className="font-bold text-lg mb-2 text-navy-deep">Our Mission</h3>
           <p className="text-sm text-slate-600 leading-relaxed">
-            To deliver independent, evidence-based toxicology and regulatory
-            solutions that enable our clients to bring safe and effective
-            products to people worldwide.
+            To provide independent, evidence-based toxicology and scientific
+            support that helps our clients develop safe and effective
+            products.
           </p>
         </div>
         <div>
@@ -231,9 +230,7 @@ export default function AboutPage() {
           </div>
           <h3 className="font-bold text-lg mb-2 text-navy-deep">Our Vision</h3>
           <p className="text-sm text-slate-600 leading-relaxed">
-            To be a trusted global partner that sets the standard for
-            scientific excellence and regulatory integrity in product safety
-            evaluation.
+            To be a trusted, science-driven partner in product safety.
           </p>
         </div>
         <div>
@@ -262,9 +259,8 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-slate-600 leading-relaxed text-sm">
               <p>
-                Toxentra was founded by toxicologists and regulatory experts
-                with over 20 years of combined experience in academia,
-                industry and regulatory environments.
+                Toxentra was founded by a toxicology expert with over 20 years of
+                experience in academia and industry.
               </p>
               <p>
                 We understand the complexity of bringing products to
@@ -272,10 +268,10 @@ export default function AboutPage() {
                 every step.
               </p>
               <p>
-                Our multidisciplinary team combines deep scientific
-                knowledge with practical regulatory insight to deliver
-                strategic, reliable and customized solutions for our
-                clients.
+                Our multidisciplinary approach combines scientific knowledge in
+                toxicology, pharmacology and product safety to provide
+                reliable, evidence-based solutions tailored to our clients'
+                needs.
               </p>
             </div>
           </div>
@@ -308,7 +304,7 @@ export default function AboutPage() {
       <section className="max-w-7xl mx-auto px-6 py-20">
         <Eyebrow>WHAT WE DO</Eyebrow>
         <h2 className="text-3xl md:text-[2.25rem] font-bold font-serif mt-3 mb-10 leading-tight max-w-xl text-navy-deep">
-          Comprehensive Scientific and Regulatory Services
+          Toxicology and Product Safety Services
         </h2>
         <div className="grid md:grid-cols-3 gap-x-10 gap-y-4 bg-white rounded-2xl border border-black/5 p-10">
           {whatWeDo.map((col, i) => (
