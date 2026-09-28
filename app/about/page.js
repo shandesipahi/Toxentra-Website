@@ -17,97 +17,97 @@ import {
   MessageCircle,
   GraduationCap,
 } from "lucide-react";
-import Navbar from "../../../components/Navbar";
-import Footer from "../../../components/Footer";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 export const metadata = {
   title: "About Us — TOXENTRA",
   description:
-    "Toxentra, ürün güvenliliğine yönelik bilimsel destek sunan bağımsız bir toksikoloji ve ürün güvenliliği danışmanlık şirketidir.",
+    "Toxentra is an independent toxicology and product safety consulting company providing science-based support for product safety.",
 };
 
 const values = [
-  "Bilimsel Mükemmellik",
-  "Dürüstlük ve Bağımsızlık",
-  "Kalite ve Titizlik",
-  "İşbirliği ve Saygı",
-  "Güvenliliğe Bağlılık",
+  "Scientific Excellence",
+  "Integrity & Independence",
+  "Quality & Rigor",
+  "Collaboration & Respect",
+  "Commitment to Safety",
 ];
 
 const stats = [
   {
     icon: Users,
     big: "20+",
-    label: "Toplam Deneyim Yılı",
-    text: "Toksikoloji alanında kapsamlı deneyim.",
+    label: "Years of Combined Experience",
+    text: "Extensive experience in toxicology.",
   },
   {
     icon: FlaskConical,
-    big: "Yüzlerce",
-    label: "Bilimsel Güvenlilik Değerlendirmesi",
-    text: "İlaç, tıbbi cihaz, kozmetik ve kimyasallar genelinde.",
+    big: "Hundreds",
+    label: "Scientific Safety Assessments",
+    text: "Across pharmaceuticals, medical devices, cosmetics and chemicals.",
   },
   {
     icon: ShieldCheck,
-    big: "ERT Sertifikalı",
-    label: "Avrupa Kayıtlı Toksikolog",
-    text: "Avrupa'da tanınan profesyonel yeterlilik",
+    big: "ERT Certified",
+    label: "European Registered Toxicologist",
+    text: "Recognized professional certification in Europe.",
   },
   {
     icon: Globe2,
-    big: "Uluslararası Bilimsel Yayınların Yazarı",
+    big: "Author of International Scientific Publications",
     label: "",
-    text: "EMA, FDA, OECD, ICH, ISO, SCCS ve diğer uluslararası kılavuzlar.",
+    text: "EMA, FDA, OECD, ICH, ISO, SCCS and other international guidelines.",
   },
 ];
 
 const whatWeDo = [
   [
-    "Toksikolojik Risk Değerlendirmesi",
-    "Biyolojik Değerlendirme (ISO 10993)",
-    "Kozmetik Ürün Güvenliliği (CPSR)",
-    "Farmasötik Toksikoloji",
+    "Toxicological Risk Assessment",
+    "Biological Evaluation (ISO 10993)",
+    "Cosmetic Product Safety (CPSR)",
+    "Pharmaceutical Toxicology",
   ],
   [
-    "Çevresel Risk Değerlendirmesi (ERA)",
-    "QSAR ve Read-Across Değerlendirmesi",
-    "Bilimsel ve Toksikolojik Raporlar",
-    "Farmakovijilans",
+    "Environmental Risk Assessment (ERA)",
+    "QSAR & Read-Across Assessment",
+    "Scientific & Toxicological Reports",
+    "Pharmacovigilance",
   ],
   [
-    "Test Stratejisi Tasarımı",
-    "Laboratuvar Çalışmalarının Koordinasyonu",
+    "Testing Strategy Design",
+    "Laboratory Study Coordination (Through External Partners)",
   ],
 ];
 
 const research = [
   {
     icon: Microscope,
-    title: "Yenilikçi Risk Değerlendirmesi",
-    text: "İleri toksikolojik yaklaşım ve metodolojilerin geliştirilmesi",
+    title: "Innovative Risk Assessment",
+    text: "Development of advanced toxicological approaches and methodologies.",
   },
   {
     icon: Settings,
-    title: "Tıbbi Cihaz Güvenliliği",
-    text: "Biyolojik değerlendirme ve biyouyumluluk stratejileri",
+    title: "Medical Device Safety",
+    text: "Biological evaluation and biocompatibility strategies.",
   },
   {
     icon: TestTube,
-    title: "Formülasyon ve Ürün Güvenliliği",
-    text: "Yeni farmasötik ve kozmetik formülasyonların güvenlilik değerlendirmesi.",
+    title: "Formulation & Product Safety",
+    text: "Safety assessment of novel pharmaceutical and cosmetic formulations.",
   },
   {
     icon: Share2,
-    title: "İşbirlikçi Araştırma",
-    text: "Bilimsel ilerleme için akademi ve sanayi işbirlikleri.",
+    title: "Collaborative Research",
+    text: "Academic and industry collaborations for scientific advancement.",
   },
 ];
 
 const leadership = [
-  "Avrupa Kayıtlı Toksikolog (ERT)",
-  "Akademik Araştırmacı ve Öğretim Üyesi",
-  "Uluslararası Bilimsel Yayınlar",
-  "Toksikolojik Risk Değerlendirmesi, Tıbbi Cihaz Güvenliliği ve Regülasyon Toksikolojisi Uzmanı",
+  "European Registered Toxicologist (ERT)",
+  "Academic Researcher & University Faculty Member",
+  "International Scientific Publications",
+  "Expert in Toxicological Risk Assessment, Medical Device Safety & Regulatory Toxicology",
 ];
 
 function Eyebrow({ children, className = "" }) {
@@ -121,7 +121,7 @@ function Eyebrow({ children, className = "" }) {
 export default function AboutPage() {
   return (
     <>
-      <Navbar active="about" locale="tr" />
+      <Navbar active="About Us" />
 
       {/* HERO */}
       <section className="max-w-7xl mx-auto px-6 pt-16 pb-20 grid md:grid-cols-2 gap-14 items-center">
@@ -319,7 +319,7 @@ export default function AboutPage() {
         </div>
         <div className="mt-8">
           <Link
-            href="/tr/services"
+            href="/services"
             className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold border-2 border-navy text-navy transition-colors hover:bg-white"
           >
             View All Services <ArrowRight size={16} />
@@ -378,7 +378,7 @@ export default function AboutPage() {
                 journey.
               </p>
               <Link
-                href="/tr/contact"
+                href="/contact"
                 className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white transition-transform hover:scale-[1.03] bg-green"
               >
                 Contact Us <ArrowRight size={15} />
@@ -404,7 +404,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <Footer locale="tr" />
+      <Footer />
     </>
   );
 }
