@@ -101,31 +101,29 @@ export default function HomePage() {
 
         <div className="relative max-w-7xl mx-auto px-6 pt-16 pb-20 md:pt-20 md:pb-24 grid md:grid-cols-2 gap-14 items-center">
           <div>
-            <Eyebrow>Toxicology &amp; Product Safety Consulting</Eyebrow>
+            <Eyebrow>Toksikoloji ve Ürün Güvenliği Danışmanlığı</Eyebrow>
             <h1 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6">
-              <span className="text-navy-deep">Your partner in</span><br />
-              <span className="text-navy-deep">science, </span>
-              <span className="text-green">safety</span>
-              <span className="text-navy-deep">, and approval.</span>
+              <span className="text-navy-deep">Bilim,</span><br />
+              <span className="text-navy-deep"> </span>
+              <span className="text-green">güvenlik</span>
+              <span className="text-navy-deep"> ve onay süreçlerinde çözüm ortağınız.</span>
             </h1>
             <div className="w-14 h-[3px] mb-6 bg-green" />
             <p className="text-slate-600 leading-relaxed mb-8 max-w-lg">
-              TOXENTRA provides toxicology, product safety and scientific
-              consulting for the pharmaceutical, medical device, cosmetic,
-              chemical and nutraceutical industries.
+              TOXENTRA; ilaç, tıbbi cihaz, kozmetik, kimya ve nutrasötik sektörlerine toksikoloji, ürün güvenliği ve bilimsel danışmanlık hizmetleri sunmaktadır.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/tr/contact"
                 className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white shadow-md transition-transform hover:scale-[1.03] bg-green-dark"
               >
-                Request a Consultation <ArrowRight size={16} />
+                Danışmanlık Talep Edin <ArrowRight size={16} />
               </Link>
               <Link
                 href="/tr/services"
                 className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold border-2 border-navy text-navy transition-colors hover:bg-white"
               >
-                Explore Our Services
+                Hizmetlerimizi Keşfedin
               </Link>
             </div>
           </div>
@@ -139,11 +137,10 @@ export default function HomePage() {
                 <Image src="/logo.png" alt="TOXENTRA" width={112} height={24} className="h-6 w-auto mb-8" />
 
                 <h3 className="text-xl font-bold font-serif leading-tight tracking-tight mb-2 text-navy-deep">
-                  Your Partner in Science, Safety &amp; Approval
+                  Bilim, Güvenlik ve Onayda Ortağınız
                 </h3>
                 <p className="text-sm text-slate-500">
-                  Toxicology &amp; regulatory consulting for pharma, medical
-                  devices, cosmetics, chemicals and nutraceuticals.
+                  İlaç, tıbbi cihaz, kozmetik, kimyasal ve nutrasötikler için toksikoloji ve regülasyon danışmanlığı.
                 </p>
                 <svg className="absolute bottom-0 left-0 w-full opacity-70" height="60" viewBox="0 0 400 60" preserveAspectRatio="none">
                   <path d="M0,40 C100,10 300,60 400,20 L400,60 L0,60 Z" fill="#2E8B57" opacity="0.15" />
@@ -158,9 +155,9 @@ export default function HomePage() {
       <section className="border-y border-black/5 bg-white/60">
         <div className="max-w-7xl mx-auto px-6 py-16">
           <div className="text-center mb-10">
-            <Eyebrow>Why TOXENTRA</Eyebrow>
+            <Eyebrow>Neden TOXENTRA</Eyebrow>
             <h2 className="text-2xl md:text-3xl font-bold font-serif mt-3 text-navy-deep">
-              A scientific foundation you can build on
+              Üzerine inşa edebileceğiniz bilimsel bir temel
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
@@ -183,13 +180,12 @@ export default function HomePage() {
       {/* SERVICES */}
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="max-w-2xl mb-12">
-          <Eyebrow>What We Do</Eyebrow>
+          <Eyebrow>Ne Yapıyoruz</Eyebrow>
           <h2 className="text-3xl md:text-[2.25rem] font-bold font-serif mt-3 mb-4 leading-tight text-navy-deep">
-            Services built around your product&apos;s journey
+            Ürününüzün gelişim sürecine yönelik hizmetler
           </h2>
           <p className="text-slate-600 leading-relaxed">
-            From early-stage safety evaluation to final regulatory approval,
-            we bring science and compliance together at every step.
+            Ürün geliştirmenin ilk aşamalarından pazara sunuma kadar her adımda bilimsel yaklaşımı ve mevzuata uyumu destekliyoruz.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
@@ -211,7 +207,7 @@ export default function HomePage() {
             href="/tr/services"
             className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold border-2 border-navy text-navy transition-colors hover:bg-white"
           >
-            View All Services <ArrowRight size={16} />
+            Tüm Hizmetleri Görüntüle <ArrowRight size={16} />
           </Link>
         </div>
       </section>
@@ -220,24 +216,19 @@ export default function HomePage() {
       <section className="bg-white/60 border-y border-black/5">
         <div className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-10 items-center">
           <div className="md:col-span-2">
-            <Eyebrow>About TOXENTRA</Eyebrow>
+            <Eyebrow>Toxentra Hakkında</Eyebrow>
             <h2 className="text-2xl md:text-3xl font-bold font-serif mt-3 mb-4 leading-tight text-navy-deep">
-              Where scientific rigor meets regulatory requirements.
+              Bilimsel titizliğin regülasyon gereklilikleriyle buluştuğu yer.
             </h2>
             <p className="text-slate-600 leading-relaxed">
-              TOXENTRA brings together toxicological assessment, product safety
-              and scientific evaluation to support evidence-based decisions
-              throughout product development. Our team works alongside
-              R&amp;D, quality and regulatory affairs teams across the
-              pharmaceutical, medical device, cosmetic, chemical and
-              nutraceutical industries.
+              TOXENTRA; ürün geliştirme sürecinde kanıta dayalı kararları desteklemek amacıyla toksikolojik değerlendirme, ürün güvenliği ve bilimsel değerlendirmeyi bir araya getirir. Ekibimiz; ilaç, tıbbi cihaz, kozmetik, kimya ve nutrasötik sektörlerinde Ar-Ge, kalite ve regülasyon ekipleriyle birlikte çalışır.
             </p>
           </div>
           <Link
             href="/tr/about"
             className="inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold border-2 border-navy text-navy transition-colors hover:bg-white self-start md:justify-self-end"
           >
-            More About Us <ArrowRight size={16} />
+            Hakkımızda Daha Fazla <ArrowRight size={16} />
           </Link>
         </div>
       </section>
@@ -246,17 +237,16 @@ export default function HomePage() {
       <section className="bg-navy-deep">
         <div className="max-w-4xl mx-auto px-6 py-16 text-center">
           <h2 className="text-2xl md:text-3xl font-bold font-serif text-white mb-4">
-            Bring your product to market with confidence.
+            Ürününüzü güvenle pazara sunun.
           </h2>
           <p className="text-slate-300 mb-8 max-w-xl mx-auto">
-            Tell us about your product and scientific needs— our team will
-            get back to you to schedule a consultation.
+            Ürününüz ve bilimsel ihtiyaçlarınız hakkında bize bilgi verin — ekibimiz danışmanlık görüşmesi planlamak için sizinle iletişime geçecektir.
           </p>
           <Link
             href="/tr/contact"
             className="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold shadow-lg transition-transform hover:scale-[1.03] bg-green text-white"
           >
-            Contact Us <ArrowRight size={16} />
+            Bize Ulaşın <ArrowRight size={16} />
           </Link>
         </div>
       </section>
