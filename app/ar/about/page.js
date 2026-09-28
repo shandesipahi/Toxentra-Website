@@ -272,7 +272,7 @@ export default function AboutPage() {
                 <br />
                 RISK ASSESSMENT
               </h3>
-              <p className="text-sm text-slate-500 mb-8">Science. Evaluation. Confidence.</p>
+              <p className="text-sm text-slate-500 mb-8">العلم. التقييم. الثقة.</p>
               <ul className="space-y-1.5 text-sm text-slate-600">
                 {["ISO 10993", "ICH", "EMA", "FDA", "OECD"].map((t) => (
                   <li key={t}>{t}</li>
