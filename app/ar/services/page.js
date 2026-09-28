@@ -17,7 +17,7 @@ import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 
 export const metadata = {
-  title: "Services — TOXENTRA",
+  title: "الخدمات — TOXENTRA",
   description:
     "تقدّم  TOXENTRA خدمات علمية وخدمات في علم السموم لدعم سلامة المنتجات واتخاذ القرارات القائمة على الأدلة عبر مختلف مراحل تطوير المنتج.",
 };
@@ -40,7 +40,7 @@ const services = [
   {
     n: "3",
     icon: ShieldCheck,
-    title: "Medical Device Toxicology",
+    title: "علم السموم للأجهزة الطبية",
     href: "/services/medical-device-safety",
     text: "دعم لتقييم السلامة والتقييم البيولوجي طوال دورة حياة الجهاز الطبي.",
   },
@@ -82,7 +82,7 @@ const services = [
   {
     n: "9",
     icon: GraduationCap,
-    title: "Scientific Training & Education",
+    title: "التدريب والتأهيل العلمي",
     href: "/services/training-scientific-education",
     text: "برامج تدريبية وورش عمل مخصصة في مجالات علم السموم، واليقظة الدوائية، وسلامة المنتجات.",
   },
@@ -140,17 +140,15 @@ export default function ServicesPage() {
       {/* HERO */}
       <section className="max-w-7xl mx-auto px-6 pt-16 pb-16 grid md:grid-cols-2 gap-14 items-center">
         <div>
-          <Eyebrow>Our Services</Eyebrow>
+          <Eyebrow>خدماتنا</Eyebrow>
           <h1 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6">
-            <span className="text-navy-deep">Scientific Expertise.</span>
+            <span className="text-navy-deep">خبرة علمية.</span>
             <br />
-            <span className="text-green">Regulatory Solutions.</span>
+            <span className="text-green">حلول لسلامة المنتجات.</span>
           </h1>
           <div className="w-14 h-[3px] mb-6 bg-green" />
           <p className="text-slate-600 leading-relaxed max-w-md">
-            Toxentra provides end-to-end toxicology and regulatory services
-            that support product safety, compliance and market access across
-            global markets.
+            تقدّم TOXENTRA خدمات علمية وخدمات في علم السموم لدعم سلامة المنتجات واتخاذ القرارات القائمة على الأدلة عبر مختلف مراحل تطوير المنتج.
           </p>
         </div>
         <div
@@ -160,11 +158,11 @@ export default function ServicesPage() {
           <div className="w-full max-w-sm bg-white rounded-md shadow-xl p-8 relative" style={{ minHeight: 300 }}>
             <Image src="/logo.png" alt="TOXENTRA" width={112} height={24} className="h-6 w-auto mb-8" />
             <h3 className="text-xl font-bold font-serif leading-tight text-navy-deep">
-              Science.
+              العلم.
               <br />
-              Evaluation.
+              التقييم.
               <br />
-              Confidence.
+              الثقة.
             </h3>
             <svg className="absolute bottom-0 left-0 w-full opacity-70" height="60" viewBox="0 0 400 60" preserveAspectRatio="none">
               <path d="M0,40 C100,10 300,60 400,20 L400,60 L0,60 Z" fill="#2E8B57" opacity="0.15" />
@@ -201,7 +199,7 @@ export default function ServicesPage() {
                   <p className="text-sm text-slate-600 leading-relaxed mb-4 flex-1">{s.text}</p>
                 )}
                 <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-green-dark">
-                  Learn More <ArrowRight size={15} />
+                  اعرف المزيد <ArrowRight size={15} />
                 </span>
               </Link>
             );
@@ -236,12 +234,10 @@ export default function ServicesPage() {
             </div>
             <div>
               <h3 className="text-2xl font-bold font-serif text-white mb-2">
-                Let&apos;s Discuss Your Project
+                ناقش مشروعك معنا
               </h3>
               <p className="text-slate-300 text-sm leading-relaxed max-w-md">
-                From early development to regulatory approval, Toxentra
-                provides tailored scientific solutions for every stage of
-                your product lifecycle.
+                من مراحل التطوير المبكرة وحتى الحصول على الموافقات التنظيمية، تقدّم س حلولًا علمية مصممة لتلبية احتياجات كل مرحلة من مراحل دورة حياة منتجك.
               </p>
             </div>
           </div>
@@ -249,7 +245,7 @@ export default function ServicesPage() {
             href="/ar/contact"
             className="relative inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white shrink-0 transition-transform hover:scale-[1.03] bg-green"
           >
-            Request a Consultation <ArrowRight size={16} />
+            اطلب استشارة <ArrowRight size={16} />
           </Link>
         </div>
       </section>
@@ -257,9 +253,9 @@ export default function ServicesPage() {
       {/* PROCESS */}
       <section className="max-w-7xl mx-auto px-6 pb-24">
         <div className="text-center mb-14 max-w-xl mx-auto">
-          <Eyebrow>How We Support Your Project</Eyebrow>
+          <Eyebrow>كيف ندعم مشروعك؟</Eyebrow>
           <h2 className="text-2xl md:text-3xl font-bold font-serif mt-3 text-navy-deep">
-            A Scientific Process, Focused on Your Needs
+            منهجية واضحة تركّز على نجاح مشروعك
           </h2>
         </div>
         <div className="grid sm:grid-cols-4 gap-8 sm:gap-4 relative">
