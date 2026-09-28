@@ -143,13 +143,11 @@ export default function ServicesPage() {
           <h1 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6">
             <span className="text-navy-deep">Scientific Expertise.</span>
             <br />
-            <span className="text-green">Regulatory Solutions.</span>
+            <span className="text-green">Product Safety Solutions.</span>
           </h1>
           <div className="w-14 h-[3px] mb-6 bg-green" />
           <p className="text-slate-600 leading-relaxed max-w-md">
-            Toxentra provides end-to-end toxicology and regulatory services
-            that support product safety, compliance and market access across
-            global markets.
+            TOXENTRA provides scientific and toxicology services supporting product safety and evidence-based decision-making across different stages of product development.
           </p>
         </div>
         <div
