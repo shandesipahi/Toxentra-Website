@@ -12,57 +12,57 @@ import {
   Scale,
   Microscope,
 } from "lucide-react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 const trustPoints = [
   {
     icon: ShieldCheck,
-    title: "Scientific Excellence",
-    text: "ERT-certified expertise supported by academic research and hands-on regulatory experience.",
+    title: "Bilimsel Mükemmellik",
+    text: "Avrupa Kayıtlı Toksikolog (ERT) ünvanı ve Academy of Toxicological Sciences (ATS) Fellow’u",
   },
   {
     icon: FileText,
-    title: "Regulatory Expertise",
-    text: "Global regulatory knowledge aligned with EMA, FDA, OECD, ISO and ICH frameworks.",
+    title: "Regülasyon Gereklilikleri Bilgisi",
+    text: "EMA, FDA, OECD, ISO ve ICH çerçeveleriyle uyumlu küresel regülasyon bilgisi.",
   },
   {
     icon: Globe2,
-    title: "International Perspective",
-    text: "Supporting clients across markets and jurisdictions with scientific rigor and integrity.",
+    title: "Uluslararası Bakış Açısı",
+    text: "Farklı pazar ve düzenleyici çerçevelerdeki müşterilerimizi bilimsel titizlik ve dürüstlükle destekliyoruz.",
   },
   {
     icon: LineChart,
-    title: "Evidence-Based Approach",
-    text: "Decisions built on reliable data, structured risk assessment and sound scientific reasoning.",
+    title: "Kanıta Dayalı Yaklaşım",
+    text: "Güvenilir verilere, sistematik risk değerlendirmesine ve sağlam bilimsel gerekçelere dayalı kararlar.",
   },
   {
     icon: Users,
-    title: "Independent Advice",
-    text: "Objective, unbiased and confidential scientific consulting — free of commercial conflicts.",
+    title: "Bağımsız Danışmanlık",
+    text: "Ticari çıkar çatışmalarından bağımsız, objektif, tarafsız ve gizli bilimsel danışmanlık.",
   },
 ];
 
 const services = [
   {
     icon: FlaskConical,
-    title: "Toxicological Assessment",
-    text: "Scientific evaluation of the potential health risks associated with your products, from raw material to finished formulation.",
+    title: "Toksikolojik Değerlendirme",
+    text: "Bileşenden bitmiş ürüne kadar, ürünlerinizle ilişkili potansiyel sağlık risklerinin bilimsel değerlendirilmesi.",
   },
   {
     icon: ClipboardCheck,
-    title: "Product Safety Consulting",
-    text: "Preparation and evaluation of safety documentation for cosmetic, chemical and nutraceutical products.",
+    title: "Ürün Güvenliliği Danışmanlığı",
+    text: "Kozmetik, kimyasal ve nutrasötik ürünler için güvenlilik dokümantasyonunun hazırlanması ve değerlendirilmesi.",
   },
   {
     icon: Scale,
-    title: "Regulatory Consulting",
-    text: "Supporting compliance with national and international regulations for pharmaceuticals, medical devices and related sectors.",
+    title: "Regülasyon Gerekliliklerine Uyumlu Bilimsel Destek",
+    text: "İlaç, tıbbi cihaz ve ilgili sektörler için ulusal ve uluslararası regülasyon gerekliliklerle uyumlu bilimsel destek.",
   },
   {
     icon: Microscope,
-    title: "R&D Consulting",
-    text: "Scientific and technical support throughout your product development lifecycle, from concept to submission.",
+    title: "Ar-Ge Danışmanlığı",
+    text: "Konseptten başvuruya kadar ürün geliştirme sürecinizin tamamında bilimsel ve teknik destek.",
   },
 ];
 
@@ -77,7 +77,7 @@ function Eyebrow({ children }) {
 export default function HomePage() {
   return (
     <>
-      <Navbar active="Home" />
+      <Navbar active="home" locale="tr" />
 
       {/* HERO */}
       <section className="relative overflow-hidden">
@@ -101,7 +101,7 @@ export default function HomePage() {
 
         <div className="relative max-w-7xl mx-auto px-6 pt-16 pb-20 md:pt-20 md:pb-24 grid md:grid-cols-2 gap-14 items-center">
           <div>
-            <Eyebrow>Toxicology &amp; Regulatory Consulting</Eyebrow>
+            <Eyebrow>Toxicology &amp; Product Safety Consulting</Eyebrow>
             <h1 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6">
               <span className="text-navy-deep">Your partner in</span><br />
               <span className="text-navy-deep">science, </span>
@@ -110,19 +110,19 @@ export default function HomePage() {
             </h1>
             <div className="w-14 h-[3px] mb-6 bg-green" />
             <p className="text-slate-600 leading-relaxed mb-8 max-w-lg">
-              TOXENTRA delivers toxicology, product safety and regulatory
+              TOXENTRA provides toxicology, product safety and scientific
               consulting for the pharmaceutical, medical device, cosmetic,
               chemical and nutraceutical industries.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
-                href="/contact"
+                href="/tr/contact"
                 className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white shadow-md transition-transform hover:scale-[1.03] bg-green-dark"
               >
                 Request a Consultation <ArrowRight size={16} />
               </Link>
               <Link
-                href="/services"
+                href="/tr/services"
                 className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold border-2 border-navy text-navy transition-colors hover:bg-white"
               >
                 Explore Our Services
@@ -208,7 +208,7 @@ export default function HomePage() {
         </div>
         <div className="mt-10">
           <Link
-            href="/services"
+            href="/tr/services"
             className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold border-2 border-navy text-navy transition-colors hover:bg-white"
           >
             View All Services <ArrowRight size={16} />
@@ -222,19 +222,19 @@ export default function HomePage() {
           <div className="md:col-span-2">
             <Eyebrow>About TOXENTRA</Eyebrow>
             <h2 className="text-2xl md:text-3xl font-bold font-serif mt-3 mb-4 leading-tight text-navy-deep">
-              Where scientific rigor meets regulatory clarity
+              Where scientific rigor meets regulatory requirements.
             </h2>
             <p className="text-slate-600 leading-relaxed">
-              TOXENTRA brings together toxicological assessment, product
-              safety and regulatory strategy so your products reach the
-              market safely and in full compliance. Our team works alongside
+              TOXENTRA brings together toxicological assessment, product safety
+              and scientific evaluation to support evidence-based decisions
+              throughout product development. Our team works alongside
               R&amp;D, quality and regulatory affairs teams across the
               pharmaceutical, medical device, cosmetic, chemical and
               nutraceutical industries.
             </p>
           </div>
           <Link
-            href="/about"
+            href="/tr/about"
             className="inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold border-2 border-navy text-navy transition-colors hover:bg-white self-start md:justify-self-end"
           >
             More About Us <ArrowRight size={16} />
@@ -249,11 +249,11 @@ export default function HomePage() {
             Bring your product to market with confidence.
           </h2>
           <p className="text-slate-300 mb-8 max-w-xl mx-auto">
-            Tell us about your product and regulatory pathway — our team will
+            Tell us about your product and scientific needs— our team will
             get back to you to schedule a consultation.
           </p>
           <Link
-            href="/contact"
+            href="/tr/contact"
             className="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold shadow-lg transition-transform hover:scale-[1.03] bg-green text-white"
           >
             Contact Us <ArrowRight size={16} />
@@ -261,7 +261,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <Footer />
+      <Footer locale="tr" />
     </>
   );
 }
