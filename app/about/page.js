@@ -17,97 +17,97 @@ import {
   MessageCircle,
   GraduationCap,
 } from "lucide-react";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+import Navbar from "../../../components/Navbar";
+import Footer from "../../../components/Footer";
 
 export const metadata = {
   title: "About Us — TOXENTRA",
   description:
-    "Toxentra is an independent toxicology and regulatory consulting company dedicated to advancing product safety through scientific excellence.",
+    "Toxentra, ürün güvenliliğine yönelik bilimsel destek sunan bağımsız bir toksikoloji ve ürün güvenliliği danışmanlık şirketidir.",
 };
 
 const values = [
-  "Scientific Excellence",
-  "Integrity & Independence",
-  "Quality & Rigor",
-  "Collaboration & Respect",
-  "Commitment to Safety",
+  "Bilimsel Mükemmellik",
+  "Dürüstlük ve Bağımsızlık",
+  "Kalite ve Titizlik",
+  "İşbirliği ve Saygı",
+  "Güvenliliğe Bağlılık",
 ];
 
 const stats = [
   {
     icon: Users,
     big: "20+",
-    label: "Years of Combined Experience",
-    text: "Deep expertise in toxicology and regulatory science.",
+    label: "Toplam Deneyim Yılı",
+    text: "Toksikoloji alanında kapsamlı deneyim.",
   },
   {
     icon: FlaskConical,
-    big: "Hundreds",
-    label: "Scientific Safety Assessments",
-    text: "Across pharmaceuticals, medical devices, cosmetics and chemicals.",
+    big: "Yüzlerce",
+    label: "Bilimsel Güvenlilik Değerlendirmesi",
+    text: "İlaç, tıbbi cihaz, kozmetik ve kimyasallar genelinde.",
   },
   {
     icon: ShieldCheck,
-    big: "ERT Certified",
-    label: "European Registered Toxicologist",
-    text: "Recognized professional certification in Europe.",
+    big: "ERT Sertifikalı",
+    label: "Avrupa Kayıtlı Toksikolog",
+    text: "Avrupa'da tanınan profesyonel yeterlilik",
   },
   {
     icon: Globe2,
-    big: "Global Regulatory Expertise",
+    big: "Uluslararası Bilimsel Yayınların Yazarı",
     label: "",
-    text: "EMA, FDA, OECD, ICH, ISO, SCCS and other international guidelines.",
+    text: "EMA, FDA, OECD, ICH, ISO, SCCS ve diğer uluslararası kılavuzlar.",
   },
 ];
 
 const whatWeDo = [
   [
-    "Toxicological Risk Assessment",
-    "Biological Evaluation (ISO 10993)",
-    "Cosmetic Product Safety (CPSR)",
-    "Pharmaceutical Toxicology",
+    "Toksikolojik Risk Değerlendirmesi",
+    "Biyolojik Değerlendirme (ISO 10993)",
+    "Kozmetik Ürün Güvenliliği (CPSR)",
+    "Farmasötik Toksikoloji",
   ],
   [
-    "Environmental Risk Assessment (ERA)",
-    "QSAR & Read-Across Assessment",
-    "Scientific & Regulatory Reports",
-    "Pharmacovigilance",
+    "Çevresel Risk Değerlendirmesi (ERA)",
+    "QSAR ve Read-Across Değerlendirmesi",
+    "Bilimsel ve Toksikolojik Raporlar",
+    "Farmakovijilans",
   ],
   [
-    "Testing Strategy Design",
-    "Laboratory Study Management (Through Trusted Partners)",
+    "Test Stratejisi Tasarımı",
+    "Laboratuvar Çalışmalarının Koordinasyonu",
   ],
 ];
 
 const research = [
   {
     icon: Microscope,
-    title: "Innovative Risk Assessment",
-    text: "Development of advanced toxicological approaches and methodologies.",
+    title: "Yenilikçi Risk Değerlendirmesi",
+    text: "İleri toksikolojik yaklaşım ve metodolojilerin geliştirilmesi",
   },
   {
     icon: Settings,
-    title: "Medical Device Safety",
-    text: "Biological evaluation and biocompatibility strategies.",
+    title: "Tıbbi Cihaz Güvenliliği",
+    text: "Biyolojik değerlendirme ve biyouyumluluk stratejileri",
   },
   {
     icon: TestTube,
-    title: "Formulation & Product Safety",
-    text: "Safety assessment of novel pharmaceutical and cosmetic formulations.",
+    title: "Formülasyon ve Ürün Güvenliliği",
+    text: "Yeni farmasötik ve kozmetik formülasyonların güvenlilik değerlendirmesi.",
   },
   {
     icon: Share2,
-    title: "Collaborative Research",
-    text: "Academic and industry collaborations for scientific advancement.",
+    title: "İşbirlikçi Araştırma",
+    text: "Bilimsel ilerleme için akademi ve sanayi işbirlikleri.",
   },
 ];
 
 const leadership = [
-  "European Registered Toxicologist (ERT)",
-  "Academic Researcher & University Faculty Member",
-  "International Scientific Author",
-  "Expert in Toxicological Risk Assessment, Medical Device Safety & Regulatory Toxicology",
+  "Avrupa Kayıtlı Toksikolog (ERT)",
+  "Akademik Araştırmacı ve Öğretim Üyesi",
+  "Uluslararası Bilimsel Yayınlar",
+  "Toksikolojik Risk Değerlendirmesi, Tıbbi Cihaz Güvenliliği ve Regülasyon Toksikolojisi Uzmanı",
 ];
 
 function Eyebrow({ children, className = "" }) {
@@ -121,7 +121,7 @@ function Eyebrow({ children, className = "" }) {
 export default function AboutPage() {
   return (
     <>
-      <Navbar active="About Us" />
+      <Navbar active="about" locale="tr" />
 
       {/* HERO */}
       <section className="max-w-7xl mx-auto px-6 pt-16 pb-20 grid md:grid-cols-2 gap-14 items-center">
@@ -130,23 +130,22 @@ export default function AboutPage() {
           <h1 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6">
             <span className="text-navy-deep">Independent Science.</span>
             <br />
-            <span className="text-navy-deep">Regulatory Confidence.</span>
+            <span className="text-navy-deep">Evidence-Based Solutions.</span>
             <br />
             <span className="text-green">Safer Products.</span>
           </h1>
           <div className="w-14 h-[3px] mb-6 bg-green" />
           <p className="text-slate-600 leading-relaxed mb-5">
-            Toxentra is an independent toxicology and regulatory consulting
-            company dedicated to advancing product safety through scientific
-            excellence, evidence-based decision making, and international
-            regulatory expertise.
+            Toxentra is an independent toxicology consulting company dedicated to
+            advancing product safety through a scientific approach,
+            evidence-based decision-making, and alignment with international
+            regulations.
           </p>
           <p className="text-slate-600 leading-relaxed">
             We support pharmaceutical, medical device, cosmetics, chemical
-            and biotechnology companies throughout the entire product
-            lifecycle—from early development and testing strategy to
-            toxicological risk assessment, regulatory documentation and
-            market approval.
+            and biotechnology companies throughout the product
+            lifecycle—from product development and testing strategies to
+            toxicological risk assessment and safety evaluation.
           </p>
         </div>
 
@@ -219,9 +218,9 @@ export default function AboutPage() {
           </div>
           <h3 className="font-bold text-lg mb-2 text-navy-deep">Our Mission</h3>
           <p className="text-sm text-slate-600 leading-relaxed">
-            To deliver independent, evidence-based toxicology and regulatory
-            solutions that enable our clients to bring safe and effective
-            products to people worldwide.
+            To provide independent, evidence-based toxicology and scientific
+            support that helps our clients develop safe and effective
+            products.
           </p>
         </div>
         <div>
@@ -230,9 +229,7 @@ export default function AboutPage() {
           </div>
           <h3 className="font-bold text-lg mb-2 text-navy-deep">Our Vision</h3>
           <p className="text-sm text-slate-600 leading-relaxed">
-            To be a trusted global partner that sets the standard for
-            scientific excellence and regulatory integrity in product safety
-            evaluation.
+            To be a trusted, science-driven partner in product safety.
           </p>
         </div>
         <div>
@@ -261,9 +258,8 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-slate-600 leading-relaxed text-sm">
               <p>
-                Toxentra was founded by toxicologists and regulatory experts
-                with over 20 years of combined experience in academia,
-                industry and regulatory environments.
+                Toxentra was founded by a toxicology expert with over 20 years of
+                experience in academia and industry.
               </p>
               <p>
                 We understand the complexity of bringing products to
@@ -271,10 +267,10 @@ export default function AboutPage() {
                 every step.
               </p>
               <p>
-                Our multidisciplinary team combines deep scientific
-                knowledge with practical regulatory insight to deliver
-                strategic, reliable and customized solutions for our
-                clients.
+                Our multidisciplinary approach combines scientific knowledge in
+                toxicology, pharmacology and product safety to provide
+                reliable, evidence-based solutions tailored to our clients'
+                needs.
               </p>
             </div>
           </div>
@@ -307,7 +303,7 @@ export default function AboutPage() {
       <section className="max-w-7xl mx-auto px-6 py-20">
         <Eyebrow>WHAT WE DO</Eyebrow>
         <h2 className="text-3xl md:text-[2.25rem] font-bold font-serif mt-3 mb-10 leading-tight max-w-xl text-navy-deep">
-          Comprehensive Scientific and Regulatory Services
+          Toxicology and Product Safety Services
         </h2>
         <div className="grid md:grid-cols-3 gap-x-10 gap-y-4 bg-white rounded-2xl border border-black/5 p-10">
           {whatWeDo.map((col, i) => (
@@ -323,7 +319,7 @@ export default function AboutPage() {
         </div>
         <div className="mt-8">
           <Link
-            href="/services"
+            href="/tr/services"
             className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold border-2 border-navy text-navy transition-colors hover:bg-white"
           >
             View All Services <ArrowRight size={16} />
@@ -382,7 +378,7 @@ export default function AboutPage() {
                 journey.
               </p>
               <Link
-                href="/contact"
+                href="/tr/contact"
                 className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white transition-transform hover:scale-[1.03] bg-green"
               >
                 Contact Us <ArrowRight size={15} />
@@ -408,7 +404,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <Footer />
+      <Footer locale="tr" />
     </>
   );
 }
