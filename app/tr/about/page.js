@@ -23,7 +23,7 @@ import Footer from "../../../components/Footer";
 export const metadata = {
   title: "About Us — TOXENTRA",
   description:
-    "Toxentra is an independent toxicology and regulatory consulting company dedicated to advancing product safety through scientific excellence.",
+    "Toxentra, ürün güvenliliğine yönelik bilimsel destek sunan bağımsız bir toksikoloji ve ürün güvenliliği danışmanlık şirketidir.",
 };
 
 const values = [
@@ -55,7 +55,7 @@ const stats = [
   },
   {
     icon: Globe2,
-    big: "Uluslararası Bilimsel Yazar",
+    big: "Uluslararası Bilimsel Yayınların Yazarı",
     label: "",
     text: "EMA, FDA, OECD, ICH, ISO, SCCS ve diğer uluslararası kılavuzlar.",
   },
@@ -106,7 +106,7 @@ const research = [
 const leadership = [
   "Avrupa Kayıtlı Toksikolog (ERT)",
   "Akademik Araştırmacı ve Öğretim Üyesi",
-  "Uluslararası Bilimsel Yazar",
+  "Uluslararası Bilimsel Yayınlar",
   "Toksikolojik Risk Değerlendirmesi, Tıbbi Cihaz Güvenliliği ve Regülasyon Toksikolojisi Uzmanı",
 ];
 
