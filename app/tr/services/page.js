@@ -17,7 +17,7 @@ import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 
 export const metadata = {
-  title: "Services — TOXENTRA",
+  title: "Hizmetler — TOXENTRA",
   description:
     "TOXENTRA, ürün geliştirmenin farklı aşamalarında ürün güvenliğini ve kanıta dayalı karar alma süreçlerini destekleyen bilimsel ve toksikoloji hizmetleri sunar.",
 };
@@ -139,17 +139,15 @@ export default function ServicesPage() {
       {/* HERO */}
       <section className="max-w-7xl mx-auto px-6 pt-16 pb-16 grid md:grid-cols-2 gap-14 items-center">
         <div>
-          <Eyebrow>Our Services</Eyebrow>
+          <Eyebrow>Hizmetlerimiz</Eyebrow>
           <h1 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6">
-            <span className="text-navy-deep">Scientific Expertise.</span>
+            <span className="text-navy-deep">Bilimsel Uzmanlık.</span>
             <br />
-            <span className="text-green">Regulatory Solutions.</span>
+            <span className="text-green">Ürün Güvenliği Çözümleri.</span>
           </h1>
           <div className="w-14 h-[3px] mb-6 bg-green" />
           <p className="text-slate-600 leading-relaxed max-w-md">
-            Toxentra provides end-to-end toxicology and regulatory services
-            that support product safety, compliance and market access across
-            global markets.
+            TOXENTRA, ürün geliştirmenin farklı aşamalarında ürün güvenliğini ve kanıta dayalı karar alma süreçlerini destekleyen bilimsel ve toksikoloji hizmetleri sunar.
           </p>
         </div>
         <div
@@ -200,7 +198,7 @@ export default function ServicesPage() {
                   <p className="text-sm text-slate-600 leading-relaxed mb-4 flex-1">{s.text}</p>
                 )}
                 <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-green-dark">
-                  Learn More <ArrowRight size={15} />
+                  Daha Fazla Bilgi <ArrowRight size={15} />
                 </span>
               </Link>
             );
@@ -235,12 +233,10 @@ export default function ServicesPage() {
             </div>
             <div>
               <h3 className="text-2xl font-bold font-serif text-white mb-2">
-                Let&apos;s Discuss Your Project
+                Projenizi Konuşalım
               </h3>
               <p className="text-slate-300 text-sm leading-relaxed max-w-md">
-                From early development to regulatory approval, Toxentra
-                provides tailored scientific solutions for every stage of
-                your product lifecycle.
+                Erken geliştirmeden regülasyon onayına kadar, Toxentra ürün yaşam döngünüzün her aşaması için kişiselleştirilmiş bilimsel çözümler sunar.
               </p>
             </div>
           </div>
@@ -248,7 +244,7 @@ export default function ServicesPage() {
             href="/tr/contact"
             className="relative inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white shrink-0 transition-transform hover:scale-[1.03] bg-green"
           >
-            Request a Consultation <ArrowRight size={16} />
+            Danışmanlık Talep Edin <ArrowRight size={16} />
           </Link>
         </div>
       </section>
@@ -256,9 +252,9 @@ export default function ServicesPage() {
       {/* PROCESS */}
       <section className="max-w-7xl mx-auto px-6 pb-24">
         <div className="text-center mb-14 max-w-xl mx-auto">
-          <Eyebrow>How We Support Your Project</Eyebrow>
+          <Eyebrow>Projenizi Nasıl Destekliyoruz</Eyebrow>
           <h2 className="text-2xl md:text-3xl font-bold font-serif mt-3 text-navy-deep">
-            A Scientific Process, Focused on Your Needs
+            İhtiyaçlarınıza Odaklanan Bilimsel Bir Süreç
           </h2>
         </div>
         <div className="grid sm:grid-cols-4 gap-8 sm:gap-4 relative">
