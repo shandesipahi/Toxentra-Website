@@ -13,78 +13,78 @@ import {
   GraduationCap,
   MessageCircle,
 } from "lucide-react";
-import Navbar from "../../../components/Navbar";
-import Footer from "../../../components/Footer";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 export const metadata = {
   title: "Services — TOXENTRA",
   description:
-    "TOXENTRA, ürün geliştirmenin farklı aşamalarında ürün güvenliğini ve kanıta dayalı karar alma süreçlerini destekleyen bilimsel ve toksikoloji hizmetleri sunar.",
+    "TOXENTRA provides scientific and toxicology services supporting product safety and evidence-based decision-making across different stages of product development.",
 };
 
 const services = [
   {
     n: "1",
     icon: FlaskConical,
-    title: "Toksikolojik Risk Değerlendirmesi",
+    title: "Toxicological Risk Assessment",
     href: "/services/toxicological-risk-assessment",
-    text: "İnsan sağlığını korumak ve regülasyon uyumunu desteklemek için kapsamlı risk değerlendirmeleri.",
+    text: "Comprehensive risk assessments to protect human health and support regulatory compliance.",
   },
   {
     n: "2",
     icon: Microscope,
-    title: "Biyolojik Değerlendirme (ISO 10993)",
-    text: "ISO 10993 standartlarına uygun biyolojik değerlendirme ve biyouyumluluk hizmetleri.",
+    title: "Biological Evaluation (ISO 10993)",
+    text: "Biological evaluation and biocompatibility services in accordance with ISO 10993 standards.",
     href: "/services/biological-evaluation-iso-10993",
   },
   {
     n: "3",
     icon: ShieldCheck,
-    title: "Tıbbi Cihaz Toksikolojisi",
+    title: "Medical Device Toxicology",
     href: "/services/medical-device-safety",
-    text: "Tıbbi cihazın yaşam döngüsü boyunca güvenlik ve biyolojik değerlendirme desteği.",
+    text: "Safety and biological evaluation support throughout the medical device lifecycle.",
   },
   {
     n: "4",
     icon: SprayCan,
-    title: "Kozmetik Ürün Güvenliliği (CPSR)",
+    title: "Cosmetic Product Safety (CPSR)",
     href: "/services/cosmetic-product-safety",
-    text: "AB Kozmetik Regülasyonu (EC) No 1223/2009'a uygun bilimsel güvenlilik değerlendirmesi ve rapor hazırlığı.",
+    text: "Scientific safety assessment and report preparation in line with EU Cosmetics Regulation (EC) No 1223/2009.",
   },
   {
     n: "5",
     icon: TrendingUp,
-    title: "Klinik ve Farmakolojik Değerlendirme",
+    title: "Clinical & Pharmacological Evaluation",
     href: "/services/clinical-pharmacological-evaluation",
-    text: "Ürün geliştirme ve regülasyon başvurularını desteklemek için klinik, farmakolojik ve biyofarmasötik verilerin değerlendirilmesi.",
+    text: "Evaluation of clinical, pharmacological and biopharmaceutical data to support product development and regulatory submissions.",
   },
   {
     n: "6",
     icon: Pill,
-    title: "Farmakovijilans",
+    title: "Pharmacovigilance",
     href: "/services/pharmacovigilance",
-    bullets: ["Sinyal tespiti desteği", "Literatür taraması desteği", "Eğitim"],
+    bullets: ["Signal detection support", "Literature review support", "Training"],
   },
   {
     n: "7",
     icon: Atom,
-    title: "Moleküler Tasarım ve Hesaplamalı Toksikoloji",
+    title: "Molecular Design & Computational Toxicology",
     href: "/services/molecular-design-computational-toxicology",
-    text: "CADD, küçük molekül tasarımı, metabolit sentezi, QSAR, docking ve öngörücü toksikoloji dahil in silico çözümler.",
+    text: "In silico solutions including CADD, small molecule design, metabolite synthesis, QSAR, docking and predictive toxicology.",
   },
   {
     n: "8",
     icon: FileText,
-    title: "Bilimsel ve Toksikoloji Danışmanlığı",
+    title: "Scientific & Toxicology Consulting",
     href: "/services/scientific-regulatory-consulting",
-    text: "Ürününüze ve hedef pazarlarınıza özel, ilgili regülasyon gereklilikleriyle uyumlu bilimsel çözümler.",
+    text: "Scientific solutions tailored to your product and target markets, aligned with regulatory requirements.",
   },
   {
     n: "9",
     icon: GraduationCap,
-    title: "Bilimsel Eğitim ve Öğretim",
+    title: "Scientific Training & Education",
     href: "/services/training-scientific-education",
-    text: "Toksikoloji, farmakovijilans ve ürün güvenliği alanlarında ihtiyaca özel eğitim programları ve atölyeler.",
+    text: "Tailored training programs and workshops on toxicology, pharmacovigilance and product safety.",
   },
 ];
 
@@ -92,26 +92,26 @@ const process = [
   {
     n: "01",
     icon: MessageCircle,
-    title: "İlk Görüşme",
-    text: "Ürününüzü, hedeflerinizi ve bilimsel ihtiyaçlarınızı değerlendiriyoruz.",
+    title: "Initial Consultation",
+    text: "We learn about your product, goals and scientific needs.",
   },
   {
     n: "02",
     icon: Microscope,
-    title: "Bilimsel Değerlendirme",
-    text: "İlgili bilimsel değerlendirmeleri gerçekleştiriyor ve uygun değerlendirme ihtiyaçlarını belirliyoruz.",
+    title: "Scientific Assessment",
+    text: "We conduct the relevant scientific evaluations and identify appropriate assessment needs.",
   },
   {
     n: "03",
     icon: ShieldCheck,
-    title: "Regülasyonlarla Uyumlu Strateji",
-    text: "İlgili regülasyon gereklilikleriyle uyumlu bilimsel çözümler sunuyoruz.",
+    title: "Regulatory-Aligned Strategy",
+    text: "We provide scientific solutions aligned with applicable regulatory requirements.",
   },
   {
     n: "04",
     icon: FileText,
-    title: "Nihai Rapor ve Sürekli Destek",
-    text: "Kapsamlı raporlar sunuyor ve desteğimizi sürdürüyoruz.",
+    title: "Final Report & Ongoing Support",
+    text: "We deliver comprehensive reports and continue to support you.",
   },
 ];
 
@@ -134,7 +134,7 @@ function IconCircle({ Icon }) {
 export default function ServicesPage() {
   return (
     <>
-      <Navbar active="services" locale="tr" />
+      <Navbar active="Services" />
 
       {/* HERO */}
       <section className="max-w-7xl mx-auto px-6 pt-16 pb-16 grid md:grid-cols-2 gap-14 items-center">
@@ -245,7 +245,7 @@ export default function ServicesPage() {
             </div>
           </div>
           <Link
-            href="/tr/contact"
+            href="/contact"
             className="relative inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white shrink-0 transition-transform hover:scale-[1.03] bg-green"
           >
             Request a Consultation <ArrowRight size={16} />
@@ -281,7 +281,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <Footer locale="tr" />
+      <Footer />
     </>
   );
 }
