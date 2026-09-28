@@ -49,14 +49,14 @@ const stats = [
   },
   {
     icon: ShieldCheck,
-    big: "ERT Certified",
+    big: "ERT",
     label: "European Registered Toxicologist",
     text: "Recognized professional certification in Europe.",
   },
   {
     icon: Globe2,
-    big: "Author of International Scientific Publications",
-    label: "",
+    big: "ATS",
+    label: "Academy of Toxicological Sciences Fellow",
     text: "EMA, FDA, OECD, ICH, ISO, SCCS and other international guidelines.",
   },
 ];
