@@ -21,9 +21,9 @@ import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 
 export const metadata = {
-  title: "About Us — TOXENTRA",
+  title: "من نحن — TOXENTRA",
   description:
-    "Toxentra is an independent toxicology and regulatory consulting company dedicated to advancing product safety through scientific excellence.",
+    "Toxentra هي شركة استشارية مستقلة في علم السموم والشؤون التنظيمية، مكرّسة لتعزيز سلامة المنتجات من خلال التميز العلمي.",
 };
 
 const values = [
@@ -55,8 +55,8 @@ const stats = [
   },
   {
     icon: Globe2,
-    big: "مؤلف لمنشورات علمية دولية",
-    label: "",
+    big: "ATS",
+    label: "Academy of Toxicological Sciences Fellow",
     text: "وفقًا لإرشادات EMA وFDA وOECD وICH وISO وSCCS وغيرها من الإرشادات الدولية.",
   },
 ];
@@ -127,26 +127,20 @@ export default function AboutPage() {
       {/* HERO */}
       <section className="max-w-7xl mx-auto px-6 pt-16 pb-20 grid md:grid-cols-2 gap-14 items-center">
         <div>
-          <Eyebrow>ABOUT TOXENTRA</Eyebrow>
+          <Eyebrow>عن TOXENTRA</Eyebrow>
           <h1 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6">
-            <span className="text-navy-deep">Independent Science.</span>
+            <span className="text-navy-deep">علم مستقل.</span>
             <br />
-            <span className="text-navy-deep">Evidence-Based Solutions.</span>
+            <span className="text-navy-deep">حلول قائمة على الأدلة.</span>
             <br />
-            <span className="text-green">Safer Products.</span>
+            <span className="text-green">منتجات أكثر أمانًا.</span>
           </h1>
           <div className="w-14 h-[3px] mb-6 bg-green" />
           <p className="text-slate-600 leading-relaxed mb-5">
-            Toxentra is an independent toxicology consulting company dedicated to
-            advancing product safety through a scientific approach,
-            evidence-based decision-making, and alignment with international
-            regulations.
+            س شركة استشارية مستقلة متخصصة في علم السموم، تكرّس خبرتها لتعزيز سلامة المنتجات من خلال نهج علمي، واتخاذ القرارات القائمة على الأدلة، والمواءمة مع المتطلبات التنظيمية الدولية.
           </p>
           <p className="text-slate-600 leading-relaxed">
-            We support pharmaceutical, medical device, cosmetics, chemical
-            and biotechnology companies throughout the product
-            lifecycle—from product development and testing strategies to
-            toxicological risk assessment and safety evaluation.
+            ندعم شركات الأدوية، والأجهزة الطبية، ومستحضرات التجميل، والمواد الكيميائية، والتكنولوجيا الحيوية طوال دورة حياة المنتج، بدءًا من تطوير المنتجات ووضع استراتيجيات الاختبار، وصولًا إلى تقييم المخاطر السُّمّية وتقييم السلامة.
           </p>
         </div>
 
@@ -217,27 +211,25 @@ export default function AboutPage() {
           <div className="w-14 h-14 rounded-full flex items-center justify-center mb-4 border border-green text-green">
             <Target size={24} />
           </div>
-          <h3 className="font-bold text-lg mb-2 text-navy-deep">Our Mission</h3>
+          <h3 className="font-bold text-lg mb-2 text-navy-deep">رسالتنا</h3>
           <p className="text-sm text-slate-600 leading-relaxed">
-            To provide independent, evidence-based toxicology and scientific
-            support that helps our clients develop safe and effective
-            products.
+            تقديم دعم مستقل وقائم على الأدلة في علم السموم والمجالات العلمية، بما يساعد عملاءنا على تطوير منتجات آمنة وفعّالة.
           </p>
         </div>
         <div>
           <div className="w-14 h-14 rounded-full flex items-center justify-center mb-4 border border-green text-green">
             <Eye size={24} />
           </div>
-          <h3 className="font-bold text-lg mb-2 text-navy-deep">Our Vision</h3>
+          <h3 className="font-bold text-lg mb-2 text-navy-deep">رؤيتنا</h3>
           <p className="text-sm text-slate-600 leading-relaxed">
-            To be a trusted, science-driven partner in product safety.
+            أن نكون شريكًا موثوقًا قائمًا على العلم في مجال سلامة المنتجات.
           </p>
         </div>
         <div>
           <div className="w-14 h-14 rounded-full flex items-center justify-center mb-4 border border-green text-green">
             <Gem size={24} />
           </div>
-          <h3 className="font-bold text-lg mb-3 text-navy-deep">Our Values</h3>
+          <h3 className="font-bold text-lg mb-3 text-navy-deep">قيمنا</h3>
           <ul className="space-y-1.5">
             {values.map((v) => (
               <li key={v} className="flex items-center gap-2 text-sm text-slate-600">
@@ -253,25 +245,19 @@ export default function AboutPage() {
       <section className="bg-white/60 border-y border-black/5">
         <div className="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-14 items-start">
           <div>
-            <Eyebrow>OUR STORY</Eyebrow>
+            <Eyebrow>قصتنا</Eyebrow>
             <h2 className="text-3xl md:text-[2.25rem] font-bold font-serif mt-3 mb-6 leading-tight text-navy-deep">
-              Science at the Core, Impact in Every Decision.
+              العلم في جوهر عملنا، والأثر في كل قرار.
             </h2>
             <div className="space-y-4 text-slate-600 leading-relaxed text-sm">
               <p>
-                Toxentra was founded by a toxicology expert with over 20 years of
-                experience in academia and industry.
+                تأسست س على يد خبير في علم السموم يتمتع بخبرة تزيد على 20 عامًا في الأوساط الأكاديمية والصناعة.
               </p>
               <p>
-                We understand the complexity of bringing products to
-                market—and the critical importance of safety assessment at
-                every step.
+                ندرك تعقيدات طرح المنتجات في الأسواق، والأهمية البالغة لتقييم السلامة في كل مرحلة.
               </p>
               <p>
-                Our multidisciplinary approach combines scientific knowledge in
-                toxicology, pharmacology and product safety to provide
-                reliable, evidence-based solutions tailored to our clients'
-                needs.
+                يجمع نهجنا متعدد التخصصات بين المعرفة العلمية في علم السموم، وعلم الأدوية، وسلامة المنتجات، لتقديم حلول موثوقة وقائمة على الأدلة ومصممة وفق احتياجات عملائنا.
               </p>
             </div>
           </div>
@@ -302,9 +288,9 @@ export default function AboutPage() {
 
       {/* WHAT WE DO */}
       <section className="max-w-7xl mx-auto px-6 py-20">
-        <Eyebrow>WHAT WE DO</Eyebrow>
+        <Eyebrow>ماذا نقدّم؟</Eyebrow>
         <h2 className="text-3xl md:text-[2.25rem] font-bold font-serif mt-3 mb-10 leading-tight max-w-xl text-navy-deep">
-          Toxicology and Product Safety Services
+          خدمات علم السموم وسلامة المنتجات
         </h2>
         <div className="grid md:grid-cols-3 gap-x-10 gap-y-4 bg-white rounded-2xl border border-black/5 p-10">
           {whatWeDo.map((col, i) => (
@@ -323,7 +309,7 @@ export default function AboutPage() {
             href="/ar/services"
             className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold border-2 border-navy text-navy transition-colors hover:bg-white"
           >
-            View All Services <ArrowRight size={16} />
+            استعرض جميع الخدمات <ArrowRight size={16} />
           </Link>
         </div>
       </section>
@@ -333,18 +319,16 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-6 py-20">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
             <div className="max-w-2xl">
-              <Eyebrow>RESEARCH &amp; INNOVATION</Eyebrow>
+              <Eyebrow>البحث والابتكار</Eyebrow>
               <p className="text-slate-600 leading-relaxed mt-3">
-                Toxentra conducts and participates in scientific projects
-                that advance toxicological science and support safer
-                products and better risk assessment.
+                تنفّذ Toxentra وتشارك في مشاريع علمية تسهم في تطوير علم السموم، ودعم منتجات أكثر أمانًا، وتحسين منهجيات تقييم المخاطر.
               </p>
             </div>
             <Link
               href="#"
               className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold border-2 border-green text-green-dark shrink-0 transition-colors hover:bg-white"
             >
-              View Our Projects <ArrowRight size={15} />
+              استعرض مشاريعنا <ArrowRight size={15} />
             </Link>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -371,23 +355,21 @@ export default function AboutPage() {
             </div>
             <div>
               <h3 className="text-2xl font-bold font-serif text-white mb-3 leading-tight">
-                Let&apos;s Advance Your Product Safety
+                نساعدك على تعزيز سلامة منتجك
               </h3>
               <p className="text-slate-300 text-sm leading-relaxed mb-6 max-w-sm">
-                Whether you are at the early stages of development or
-                preparing for market entry, we are here to support your
-                journey.
+                سواء كنت في المراحل الأولى من تطوير منتجك أو تستعد لدخول السوق، فنحن هنا لدعمك في كل مرحلة.
               </p>
               <Link
                 href="/ar/contact"
                 className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white transition-transform hover:scale-[1.03] bg-green"
               >
-                Contact Us <ArrowRight size={15} />
+                تواصل معنا <ArrowRight size={15} />
               </Link>
             </div>
           </div>
           <div>
-            <Eyebrow>OUR LEADERSHIP</Eyebrow>
+            <Eyebrow>قيادتنا</Eyebrow>
             <div className="flex gap-5 mt-4">
               <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0 border border-green text-green">
                 <GraduationCap size={22} />
