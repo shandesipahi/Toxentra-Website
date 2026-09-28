@@ -138,12 +138,13 @@ export default function HomePage() {
               <div className="w-full max-w-sm bg-white rounded-md shadow-xl p-8 relative" style={{ minHeight: 320 }}>
                 <Image src="/logo.png" alt="TOXENTRA" width={112} height={24} className="h-6 w-auto mb-8" />
 
-                <h3 className="text-xl font-bold font-serif leading-tight tracking-tight mb-2 text-navy-deep">
-                  Your Partner in Science, Safety &amp; Approval
+                <h3 className="text-base font-bold font-serif leading-snug tracking-tight mb-2 text-navy-deep">
+                  Internationally recognized toxicology expertise, with European Registered Toxicologist (ERT) certification and the distinction of Fellow of the Academy of Toxicological Sciences (ATS).
                 </h3>
                 <p className="text-sm text-slate-500">
-                  Toxicology &amp; regulatory consulting for pharma, medical
-                  devices, cosmetics, chemicals and nutraceuticals.
+                  Toxicology, product safety &amp; regulatory-aligned scientific
+                  support for pharma, medical devices, cosmetics, chemicals
+                  and nutraceuticals.
                 </p>
                 <svg className="absolute bottom-0 left-0 w-full opacity-70" height="60" viewBox="0 0 400 60" preserveAspectRatio="none">
                   <path d="M0,40 C100,10 300,60 400,20 L400,60 L0,60 Z" fill="#2E8B57" opacity="0.15" />
