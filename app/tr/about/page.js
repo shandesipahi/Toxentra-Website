@@ -49,14 +49,14 @@ const stats = [
   },
   {
     icon: ShieldCheck,
-    big: "ERT Sertifikalı",
-    label: "Avrupa Kayıtlı Toksikolog",
+    big: "ERT",
+    label: "Avrupa Kayıtlı Toksikolog Yetkisi",
     text: "Avrupa'da tanınan profesyonel yeterlilik",
   },
   {
     icon: Globe2,
-    big: "Uluslararası Bilimsel Yayınların Yazarı",
-    label: "",
+    big: "ATS",
+    label: "Academy of Toxicological Sciences Fellow",
     text: "EMA, FDA, OECD, ICH, ISO, SCCS ve diğer uluslararası kılavuzlar.",
   },
 ];
