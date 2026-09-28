@@ -12,57 +12,57 @@ import {
   Scale,
   Microscope,
 } from "lucide-react";
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const trustPoints = [
   {
     icon: ShieldCheck,
-    title: "Bilimsel Mükemmellik",
-    text: "Avrupa Kayıtlı Toksikolog (ERT) ünvanı ve Academy of Toxicological Sciences (ATS) Fellow’u",
+    title: "Scientific Excellence",
+    text: "European Registered Toxicologist (ERT) and Fellow of the Academy of Toxicological Sciences (ATS)",
   },
   {
     icon: FileText,
-    title: "Regülasyon Gereklilikleri Bilgisi",
-    text: "EMA, FDA, OECD, ISO ve ICH çerçeveleriyle uyumlu küresel regülasyon bilgisi.",
+    title: "Knowledge of Regulatory Requirements",
+    text: "Global regulatory knowledge aligned with EMA, FDA, OECD, ISO and ICH frameworks.",
   },
   {
     icon: Globe2,
-    title: "Uluslararası Bakış Açısı",
-    text: "Farklı pazar ve düzenleyici çerçevelerdeki müşterilerimizi bilimsel titizlik ve dürüstlükle destekliyoruz.",
+    title: "International Perspective",
+    text: "Supporting clients across markets and jurisdictions with scientific rigor and integrity.",
   },
   {
     icon: LineChart,
-    title: "Kanıta Dayalı Yaklaşım",
-    text: "Güvenilir verilere, sistematik risk değerlendirmesine ve sağlam bilimsel gerekçelere dayalı kararlar.",
+    title: "Evidence-Based Approach",
+    text: "Decisions built on reliable data, structured risk assessment and sound scientific reasoning.",
   },
   {
     icon: Users,
-    title: "Bağımsız Danışmanlık",
-    text: "Ticari çıkar çatışmalarından bağımsız, objektif, tarafsız ve gizli bilimsel danışmanlık.",
+    title: "Independent Advice",
+    text: "Objective, unbiased and confidential scientific consulting — free of commercial conflicts.",
   },
 ];
 
 const services = [
   {
     icon: FlaskConical,
-    title: "Toksikolojik Değerlendirme",
-    text: "Bileşenden bitmiş ürüne kadar, ürünlerinizle ilişkili potansiyel sağlık risklerinin bilimsel değerlendirilmesi.",
+    title: "Toxicological Assessment",
+    text: "Scientific evaluation of the potential health risks associated with your products, from raw material to finished formulation.",
   },
   {
     icon: ClipboardCheck,
-    title: "Ürün Güvenliliği Danışmanlığı",
-    text: "Kozmetik, kimyasal ve nutrasötik ürünler için güvenlilik dokümantasyonunun hazırlanması ve değerlendirilmesi.",
+    title: "Product Safety Consulting",
+    text: "Preparation and evaluation of safety documentation for cosmetic, chemical and nutraceutical products.",
   },
   {
     icon: Scale,
-    title: "Regülasyon Gerekliliklerine Uyumlu Bilimsel Destek",
-    text: "İlaç, tıbbi cihaz ve ilgili sektörler için ulusal ve uluslararası regülasyon gerekliliklerle uyumlu bilimsel destek.",
+    title: "Regulatory-Aligned Scientific Support",
+    text: "Scientific support aligned with national and international regulatory requirements for pharmaceuticals, medical devices and related sectors.",
   },
   {
     icon: Microscope,
-    title: "Ar-Ge Danışmanlığı",
-    text: "Konseptten başvuruya kadar ürün geliştirme sürecinizin tamamında bilimsel ve teknik destek.",
+    title: "R&D Consulting",
+    text: "Scientific and technical support throughout your product development lifecycle, from concept to submission.",
   },
 ];
 
@@ -77,7 +77,7 @@ function Eyebrow({ children }) {
 export default function HomePage() {
   return (
     <>
-      <Navbar active="home" locale="tr" />
+      <Navbar active="Home" />
 
       {/* HERO */}
       <section className="relative overflow-hidden">
@@ -116,13 +116,13 @@ export default function HomePage() {
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
-                href="/tr/contact"
+                href="/contact"
                 className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white shadow-md transition-transform hover:scale-[1.03] bg-green-dark"
               >
                 Request a Consultation <ArrowRight size={16} />
               </Link>
               <Link
-                href="/tr/services"
+                href="/services"
                 className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold border-2 border-navy text-navy transition-colors hover:bg-white"
               >
                 Explore Our Services
@@ -208,7 +208,7 @@ export default function HomePage() {
         </div>
         <div className="mt-10">
           <Link
-            href="/tr/services"
+            href="/services"
             className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold border-2 border-navy text-navy transition-colors hover:bg-white"
           >
             View All Services <ArrowRight size={16} />
@@ -234,7 +234,7 @@ export default function HomePage() {
             </p>
           </div>
           <Link
-            href="/tr/about"
+            href="/about"
             className="inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold border-2 border-navy text-navy transition-colors hover:bg-white self-start md:justify-self-end"
           >
             More About Us <ArrowRight size={16} />
@@ -253,7 +253,7 @@ export default function HomePage() {
             get back to you to schedule a consultation.
           </p>
           <Link
-            href="/tr/contact"
+            href="/contact"
             className="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold shadow-lg transition-transform hover:scale-[1.03] bg-green text-white"
           >
             Contact Us <ArrowRight size={16} />
@@ -261,7 +261,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <Footer locale="tr" />
+      <Footer />
     </>
   );
 }
