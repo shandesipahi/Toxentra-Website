@@ -101,16 +101,16 @@ export default function HomePage() {
 
         <div className="relative max-w-7xl mx-auto px-6 pt-16 pb-20 md:pt-20 md:pb-24 grid md:grid-cols-2 gap-14 items-center">
           <div>
-            <Eyebrow>Toksikoloji ve Ürün Güvenliği Danışmanlığı</Eyebrow>
+            <Eyebrow>Toksikoloji ve Ürün Güvenliliği Danışmanlığı</Eyebrow>
             <h1 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6">
               <span className="text-navy-deep">Bilim,</span><br />
               <span className="text-navy-deep"> </span>
-              <span className="text-green">güvenlik</span>
+              <span className="text-green">güvenlilik</span>
               <span className="text-navy-deep"> ve onay süreçlerinde çözüm ortağınız.</span>
             </h1>
             <div className="w-14 h-[3px] mb-6 bg-green" />
             <p className="text-slate-600 leading-relaxed mb-8 max-w-lg">
-              TOXENTRA; ilaç, tıbbi cihaz, kozmetik, kimya ve nutrasötik sektörlerine toksikoloji, ürün güvenliği ve bilimsel danışmanlık hizmetleri sunmaktadır.
+              TOXENTRA; ilaç, tıbbi cihaz, kozmetik, kimya ve nutrasötik sektörlerine toksikoloji, ürün güvenliliği ve bilimsel danışmanlık hizmetleri sunar.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -136,11 +136,11 @@ export default function HomePage() {
               <div className="w-full max-w-sm bg-white rounded-md shadow-xl p-8 relative" style={{ minHeight: 320 }}>
                 <Image src="/logo.png" alt="TOXENTRA" width={112} height={24} className="h-6 w-auto mb-8" />
 
-                <h3 className="text-xl font-bold font-serif leading-tight tracking-tight mb-2 text-navy-deep">
-                  Bilim, Güvenlik ve Onayda Ortağınız
+                <h3 className="text-base font-bold font-serif leading-snug tracking-tight mb-2 text-navy-deep">
+                  Uluslararası düzeyde tanınan toksikoloji uzmanlığı; Avrupa Kayıtlı Toksikolog (ERT) sertifikası ve Academy of Toxicological Sciences (ATS) Fellow unvanıyla desteklenmektedir.
                 </h3>
                 <p className="text-sm text-slate-500">
-                  İlaç, tıbbi cihaz, kozmetik, kimyasal ve nutrasötikler için toksikoloji ve regülasyon danışmanlığı.
+                  İlaç, tıbbi cihaz, kozmetik, kimya ve nutrasötik sektörlerine yönelik toksikoloji, ürün güvenliliği ve regülasyon gerekliliklerle uyumlu bilimsel destek.
                 </p>
                 <svg className="absolute bottom-0 left-0 w-full opacity-70" height="60" viewBox="0 0 400 60" preserveAspectRatio="none">
                   <path d="M0,40 C100,10 300,60 400,20 L400,60 L0,60 Z" fill="#2E8B57" opacity="0.15" />
@@ -157,7 +157,7 @@ export default function HomePage() {
           <div className="text-center mb-10">
             <Eyebrow>Neden TOXENTRA</Eyebrow>
             <h2 className="text-2xl md:text-3xl font-bold font-serif mt-3 text-navy-deep">
-              Üzerine inşa edebileceğiniz bilimsel bir temel
+              Güvenebileceğiniz Bilimsel Bir Temel
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
