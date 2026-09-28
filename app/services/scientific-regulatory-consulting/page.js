@@ -1,75 +1,68 @@
 import {
-  Target,
-  FileText,
-  Search,
-  Route,
-  BookOpen,
-  MessageSquare,
-  Users,
-  ClipboardCheck,
-  GraduationCap,
+  BookOpen, ClipboardCheck, FileText, GraduationCap, MessageSquare, Route, Search, Target, Users
 } from "lucide-react";
-import ServiceDetailLayout from "../../../components/ServiceDetailLayout";
+import ServiceDetailLayout from "../../../../components/ServiceDetailLayout";
 
 export const metadata = {
-  title: "Scientific & Regulatory Consulting — TOXENTRA",
+  title: "Bilimsel ve Toksikoloji Danışmanlığı — TOXENTRA",
   description:
-    "Independent scientific and regulatory consulting supporting product development, technical documentation and market access.",
+    "İlaç, tıbbi cihaz, kozmetik ve tüketici ürünlerinde ürün geliştirme ve güvenlik değerlendirmesini destekleyen bağımsız bilimsel ve toksikolojik danışmanlık.",
 };
 
 const services = [
-  { icon: Target, title: "Regulatory Strategy", text: "Development of regulatory strategies tailored to product type, intended market and applicable regulatory frameworks to facilitate efficient product development and market access." },
-  { icon: FileText, title: "Scientific Documentation", text: "Preparation and scientific review of technical reports, safety assessments, literature evaluations and regulatory documents supporting product development and regulatory submissions." },
-  { icon: Search, title: "Gap Analysis", text: "Identification of scientific, technical and regulatory gaps within existing documentation and development programs, together with practical recommendations for achieving compliance." },
-  { icon: Route, title: "Regulatory Pathway Assessment", text: "Evaluation of applicable regulatory requirements, product classification and documentation needs to support strategic planning before product development or market entry." },
-  { icon: BookOpen, title: "Scientific Literature Review", text: "Comprehensive review and critical appraisal of published scientific evidence to support regulatory documentation, product claims and safety evaluations." },
-  { icon: MessageSquare, title: "Expert Scientific Opinion", text: "Preparation of independent scientific opinions addressing toxicological, pharmacological and regulatory questions for manufacturers, research organizations and legal or technical stakeholders." },
-  { icon: Users, title: "Product Development Consulting", text: "Scientific guidance throughout product development, supporting study planning, safety assessment and regulatory decision-making from concept to commercialization." },
-  { icon: ClipboardCheck, title: "Technical Documentation Review", text: "Independent review of technical documentation to ensure scientific consistency, completeness and alignment with current regulatory expectations." },
-  { icon: GraduationCap, title: "Regulatory Training", text: "Professional training programs covering toxicology, regulatory science, product safety, scientific documentation and current international regulatory requirements." },
+  { icon: Target, title: "Bilimsel Strateji ve Regülasyon Gerekliliklerine Uyum", text: "Ürün türünü, hedef pazarı ve geçerli regülasyon gerekliliklerini dikkate alan bilimsel stratejilerin geliştirilmesi." },
+  { icon: FileText, title: "Bilimsel Raporlama ve Dokümantasyon", text: "Ürün geliştirme ve güvenlik değerlendirmesini destekleyen teknik raporların, güvenlik değerlendirmelerinin ve literatür değerlendirmelerinin hazırlanması ve bilimsel olarak incelenmesi." },
+  { icon: Search, title: "Bilimsel Eksiklik Analizi", text: "Mevcut veri ve geliştirme programlarındaki bilimsel ve teknik eksikliklerin belirlenmesi ve gerektiğinde ileri değerlendirmelere yönelik önerilerin sunulması." },
+  { icon: Route, title: "Regülasyon Gerekliliklerinin Değerlendirilmesi", text: "Ürün güvenliği ve bilimsel değerlendirmeyle ilgili geçerli regülasyon gerekliliklerinin değerlendirilmesi." },
+  { icon: BookOpen, title: "Bilimsel Literatür Değerlendirmesi", text: "Ürün güvenliği ve bilimsel değerlendirmeleri desteklemek amacıyla yayımlanmış bilimsel kanıtların kapsamlı ve eleştirel olarak değerlendirilmesi." },
+  { icon: MessageSquare, title: "Uzman Bilimsel Görüş", text: "Toksikolojik, farmakolojik ve ürün güvenliğine ilişkin konuları ele alan bağımsız bilimsel görüşlerin hazırlanması." },
+  { icon: Users, title: "Ürün Geliştirme Danışmanlığı", text: "Çalışma planlaması, toksikolojik değerlendirme ve ürün güvenliği değerlendirmesi dahil olmak üzere ürün geliştirme sürecinde bilimsel danışmanlık." },
+  { icon: ClipboardCheck, title: "Bilimsel ve Teknik İnceleme", text: "Teknik bilgilerin tutarlılığını, bütünlüğünü ve ürün güvenliği açısından uygunluğunu değerlendirmek amacıyla bağımsız bilimsel inceleme." },
+  { icon: GraduationCap, title: "Bilimsel Eğitimler", text: "Toksikoloji, ürün güvenliği, risk değerlendirmesi ve ilgili bilimsel konuları kapsayan profesyonel eğitim programları." }
 ];
 
 const whyUs = [
-  "Independent scientific expertise combining toxicology, pharmacology and regulatory science.",
-  "Evidence-based consulting tailored to project-specific requirements.",
-  "Regulatory-ready documentation aligned with international expectations.",
-  "Strategic support throughout the entire product lifecycle.",
-  "Practical solutions focused on scientific quality and regulatory success.",
+  "Toksikoloji, farmakoloji ve ürün güvenliği alanlarında bağımsız bilimsel uzmanlık.",
+  "Projeye özgü gerekliliklere yönelik kanıta dayalı danışmanlık.",
+  "İlgili regülasyon gereklilikleri dikkate alınarak hazırlanan bilimsel raporlar.",
+  "Ürün yaşam döngüsünün farklı aşamalarında bilimsel destek.",
+  "Bilimsel kalite ve ürün güvenliğine odaklanan, uygulamaya yönelik ve kanıta dayalı yaklaşımlar."
 ];
 
 const faqs = [
-  { q: "What is scientific and regulatory consulting?", a: "Scientific and regulatory consulting provides expert guidance on the scientific and regulatory aspects of product development, helping organizations prepare robust documentation, meet regulatory requirements and support successful market access." },
-  { q: "When should regulatory consulting begin?", a: "Regulatory strategy is most effective when integrated early in product development. Early planning helps identify applicable requirements, reduce development risks and avoid unnecessary delays during regulatory review." },
-  { q: "What types of products does TOXENTRA support?", a: "TOXENTRA provides scientific and regulatory consulting for pharmaceuticals, medical devices, cosmetics, food supplements, chemicals and other health-related products requiring scientific safety evaluation or regulatory documentation." },
-  { q: "Can TOXENTRA review existing documentation?", a: "Yes. We perform independent scientific and regulatory reviews of existing technical documentation, identifying potential gaps and providing recommendations for improvement before regulatory submission." },
-  { q: "What is a regulatory gap analysis?", a: "A regulatory gap analysis compares existing documentation with current regulatory expectations to identify missing information, scientific deficiencies or documentation gaps that may affect regulatory compliance." },
-  { q: "How can TOXENTRA support regulatory submissions?", a: "TOXENTRA provides scientific support through regulatory strategy development, technical documentation review, literature evaluation, toxicological assessment, expert scientific opinions and preparation of regulatory-ready reports." },
+  { q: "Bilimsel ve toksikoloji danışmanlığı nedir?", a: "Bilimsel ve toksikoloji danışmanlığı; ürün geliştirme sürecinde ürün güvenliği, toksikolojik değerlendirme ve bilimsel karar alma süreçlerine kanıta dayalı destek sağlar." },
+  { q: "Bilimsel güvenlik değerlendirmesi ne zaman başlamalıdır?", a: "Bilimsel güvenlik değerlendirmesi, ürün geliştirmenin erken aşamalarında ele alınmalıdır. Erken değerlendirme; veri ihtiyaçlarının belirlenmesine, test stratejilerinin planlanmasına ve ürün geliştirme sürecinde bilimsel temelli kararların alınmasına yardımcı olabilir." },
+  { q: "TOXENTRA hangi ürün türlerini destekler?", a: "TOXENTRA; toksikolojik veya güvenlik değerlendirmesi gerektiren ilaçlar, tıbbi cihazlar, kozmetikler, gıda takviyeleri, kimyasallar ve diğer ürünler için bilimsel ve toksikoloji danışmanlığı sunar." },
+  { q: "TOXENTRA mevcut bilimsel veri ve dokümantasyonu inceleyebilir mi?", a: "Evet. Veri eksikliklerini belirlemek ve ek değerlendirmeye ihtiyaç olup olmadığını değerlendirmek amacıyla mevcut bilimsel ve teknik bilgileri bağımsız olarak inceliyoruz." },
+  { q: "Bilimsel eksiklik analizi nedir?", a: "Bilimsel eksiklik analizi, ürün güvenliği değerlendirmesini etkileyebilecek eksik bilgileri veya bilimsel sınırlılıkları belirlemek amacıyla mevcut verilerin değerlendirilmesidir." },
+  { q: "TOXENTRA regülasyon gerekliliklerine nasıl destek sağlar?", a: "TOXENTRA; ilgili regülasyon gerekliliklerini dikkate alarak toksikolojik risk değerlendirmesi, literatür değerlendirmesi, bilimsel ve teknik inceleme ve uzman bilimsel görüşler yoluyla bilimsel destek sağlar." }
 ];
 
 const related = [
-  { title: "Toxicological Risk Assessment", href: "/services/toxicological-risk-assessment" },
-  { title: "Medical Device Safety", href: "/services/medical-device-safety" },
-  { title: "Cosmetic Product Safety (CPSR)", href: "/services/cosmetic-product-safety" },
-  { title: "Clinical & Pharmacological Evaluation", href: "/services/clinical-pharmacological-evaluation" },
+  { title: "Toksikolojik Risk Değerlendirmesi", href: "/services/toxicological-risk-assessment" },
+  { title: "Tıbbi Cihaz Güvenliliği", href: "/services/medical-device-safety" },
+  { title: "Kozmetik Ürün Güvenliliği (CPSR)", href: "/services/cosmetic-product-safety" },
+  { title: "Klinik ve Farmakolojik Değerlendirme", href: "/services/clinical-pharmacological-evaluation" }
 ];
 
 export default function Page() {
   return (
     <ServiceDetailLayout
-      eyebrow="Scientific & Regulatory Consulting"
-      title="Transforming Scientific Knowledge into Regulatory Success"
-      subtitle="Independent scientific and regulatory consulting supporting product development, technical documentation and market access across pharmaceuticals, medical devices, cosmetics and consumer products."
+      eyebrow="Bilimsel ve Toksikoloji Danışmanlığı"
+      title="Bilimsel Bilgiyi Daha Güvenli Ürünlere Dönüştürmek"
+      subtitle="İlaç, tıbbi cihaz, kozmetik ve tüketici ürünlerinde ürün geliştirme ve güvenlik değerlendirmesini destekleyen bağımsız bilimsel ve toksikolojik danışmanlık."
       overview={[
-        "Successful product development requires more than scientific innovation. It also depends on a clear understanding of regulatory expectations, robust scientific documentation and well-planned development strategies. Integrating scientific expertise with regulatory knowledge helps organizations navigate increasingly complex approval processes while ensuring product safety, quality and compliance.",
-        "At TOXENTRA, we provide independent scientific and regulatory consulting tailored to the needs of manufacturers, research organizations and innovative companies. Our multidisciplinary approach combines toxicology, pharmacology and regulatory science to support product development from early-stage planning through regulatory submission and post-market activities.",
-        "Whether you require strategic regulatory advice, technical documentation or expert scientific evaluations, we deliver practical, evidence-based solutions designed to support successful product development and market access.",
+    "Başarılı ürün geliştirme; sağlam bilimsel kanıtlara, uygun güvenlik değerlendirmesine ve ilgili regülasyon gerekliliklerinin doğru anlaşılmasına dayanır. Bilimsel bilginin ürün güvenliğine yönelik sistematik bir yaklaşımla birleştirilmesi, ürün geliştirme sürecinde bilimsel temelli kararların alınmasını destekler.",
+    "TOXENTRA olarak üreticilerin, araştırma kuruluşlarının ve yenilikçi şirketlerin ihtiyaçlarına yönelik bağımsız bilimsel ve toksikoloji danışmanlığı sunuyoruz. Yaklaşımımız; ürün geliştirmenin farklı aşamalarını desteklemek üzere toksikoloji, farmakoloji ve ürün güvenliği alanlarını bir araya getirir.",
+    "Toksikolojik değerlendirme, bilimsel değerlendirme veya ürün geliştirme desteğine ihtiyaç duyduğunuzda, ihtiyaçlarınıza özel, uygulamaya yönelik ve kanıta dayalı bilimsel destek sunuyoruz."
       ]}
       services={services}
       whyUs={whyUs}
       faqs={faqs}
       related={related}
-      ctaTitle="Looking for strategic scientific and regulatory support?"
-      ctaText="Navigating today's regulatory landscape requires sound scientific evidence and a clear regulatory strategy. TOXENTRA provides independent consulting that helps organizations develop safer products, prepare stronger documentation and achieve successful market access."
+      ctaTitle="Bağımsız bilimsel ve toksikoloji desteği mi arıyorsunuz?"
+      ctaText="Ürün güvenliğine ilişkin kararlar, güvenilir bilimsel kanıtlara ve uygun toksikolojik değerlendirmelere dayanmalıdır. TOXENTRA, kuruluşların ürün güvenliğini değerlendirmelerine ve ürün geliştirme sürecinde kanıta dayalı kararlar almalarına yardımcı olmak amacıyla bağımsız bilimsel destek sunar."
+      locale="tr"
     />
   );
 }
