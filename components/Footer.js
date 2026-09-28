@@ -16,7 +16,7 @@ const LABELS = {
     terms: "Terms of Use",
   },
   tr: {
-    tagline: "Ürün güvenliğini ve kanıta dayalı karar alma süreçlerini destekleyen bağımsız toksikoloji ve bilimsel çözümler.",
+    tagline: "Ürün güvenliliğini ve kanıta dayalı karar alma süreçlerini destekleyen bağımsız toksikoloji ve bilimsel çözümler.",
     company: "Şirket",
     aboutUs: "Hakkımızda",
     services: "Hizmetler",
