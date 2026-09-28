@@ -19,7 +19,7 @@ const trustPoints = [
   {
     icon: ShieldCheck,
     title: "Bilimsel Mükemmellik",
-    text: "ERT-certified expertise supported by academic research and hands-on regulatory experience.",
+    text: "Avrupa Kayıtlı Toksikolog (ERT) ünvanı ve Academy of Toxicological Sciences (ATS) Fellow’u",
   },
   {
     icon: FileText,
@@ -46,23 +46,23 @@ const trustPoints = [
 const services = [
   {
     icon: FlaskConical,
-    title: "Toxicological Assessment",
-    text: "Scientific evaluation of the potential health risks associated with your products, from raw material to finished formulation.",
+    title: "Toksikolojik Değerlendirme",
+    text: "Bileşenden bitmiş ürüne kadar, ürünlerinizle ilişkili potansiyel sağlık risklerinin bilimsel değerlendirilmesi.",
   },
   {
     icon: ClipboardCheck,
-    title: "Product Safety Consulting",
-    text: "Preparation and evaluation of safety documentation for cosmetic, chemical and nutraceutical products.",
+    title: "Ürün Güvenliliği Danışmanlığı",
+    text: "Kozmetik, kimyasal ve nutrasötik ürünler için güvenlilik dokümantasyonunun hazırlanması ve değerlendirilmesi.",
   },
   {
     icon: Scale,
-    title: "Regulatory Consulting",
-    text: "Managing compliance with national and international regulations for pharmaceuticals, medical devices and related sectors.",
+    title: "Regülasyon Gerekliliklerine Uyumlu Bilimsel Destek",
+    text: "İlaç, tıbbi cihaz ve ilgili sektörler için ulusal ve uluslararası regülasyon gerekliliklerle uyumlu bilimsel destek.",
   },
   {
     icon: Microscope,
-    title: "R&D Consulting",
-    text: "Scientific and technical support throughout your product development lifecycle, from concept to submission.",
+    title: "Ar-Ge Danışmanlığı",
+    text: "Konseptten başvuruya kadar ürün geliştirme sürecinizin tamamında bilimsel ve teknik destek.",
   },
 ];
 
