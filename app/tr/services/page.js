@@ -19,7 +19,7 @@ import Footer from "../../../components/Footer";
 export const metadata = {
   title: "Hizmetler — TOXENTRA",
   description:
-    "TOXENTRA, ürün geliştirmenin farklı aşamalarında ürün güvenliğini ve kanıta dayalı karar alma süreçlerini destekleyen bilimsel ve toksikoloji hizmetleri sunar.",
+    "TOXENTRA, ürün geliştirmenin farklı aşamalarında ürün güvenliliğini ve kanıta dayalı karar süreçlerini destekleyen bilimsel ve toksikolojik hizmetler sunar.",
 };
 
 const services = [
@@ -143,11 +143,11 @@ export default function ServicesPage() {
           <h1 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6">
             <span className="text-navy-deep">Bilimsel Uzmanlık.</span>
             <br />
-            <span className="text-green">Ürün Güvenliği Çözümleri.</span>
+            <span className="text-green">Ürün Güvenliliğine Yönelik Çözümler.</span>
           </h1>
           <div className="w-14 h-[3px] mb-6 bg-green" />
           <p className="text-slate-600 leading-relaxed max-w-md">
-            TOXENTRA, ürün geliştirmenin farklı aşamalarında ürün güvenliğini ve kanıta dayalı karar alma süreçlerini destekleyen bilimsel ve toksikoloji hizmetleri sunar.
+            TOXENTRA, ürün geliştirmenin farklı aşamalarında ürün güvenliliğini ve kanıta dayalı karar süreçlerini destekleyen bilimsel ve toksikolojik hizmetler sunar.
           </p>
         </div>
         <div
@@ -157,11 +157,11 @@ export default function ServicesPage() {
           <div className="w-full max-w-sm bg-white rounded-md shadow-xl p-8 relative" style={{ minHeight: 300 }}>
             <Image src="/logo.png" alt="TOXENTRA" width={112} height={24} className="h-6 w-auto mb-8" />
             <h3 className="text-xl font-bold font-serif leading-tight text-navy-deep">
-              Science.
+              Bilim.
               <br />
-              Evaluation.
+              Değerlendirme.
               <br />
-              Confidence.
+              Güven.
             </h3>
             <svg className="absolute bottom-0 left-0 w-full opacity-70" height="60" viewBox="0 0 400 60" preserveAspectRatio="none">
               <path d="M0,40 C100,10 300,60 400,20 L400,60 L0,60 Z" fill="#2E8B57" opacity="0.15" />
