@@ -40,7 +40,7 @@ const services = [
   {
     n: "3",
     icon: ShieldCheck,
-    title: "Medical Device Toxicology",
+    title: "Tıbbi Cihaz Toksikolojisi",
     href: "/services/medical-device-safety",
     text: "Tıbbi cihazın yaşam döngüsü boyunca güvenlik ve biyolojik değerlendirme desteği.",
   },
@@ -82,7 +82,7 @@ const services = [
   {
     n: "9",
     icon: GraduationCap,
-    title: "Scientific Training & Education",
+    title: "Bilimsel Eğitim ve Öğretim",
     href: "/services/training-scientific-education",
     text: "Toksikoloji, farmakovijilans ve ürün güvenliği alanlarında ihtiyaca özel eğitim programları ve atölyeler.",
   },
