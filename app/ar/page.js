@@ -19,7 +19,7 @@ const trustPoints = [
   {
     icon: ShieldCheck,
     title: "التميّز العلمي",
-    text: "ERT-certified expertise supported by academic research and hands-on regulatory experience.",
+    text: "خبرة مدعومة بشهادة ERT، وزمالة ATS، والبحث الأكاديمي، والمعرفة بالمتطلبات التنظيمية.",
   },
   {
     icon: FileText,
@@ -46,23 +46,23 @@ const trustPoints = [
 const services = [
   {
     icon: FlaskConical,
-    title: "Toxicological Assessment",
-    text: "Scientific evaluation of the potential health risks associated with your products, from raw material to finished formulation.",
+    title: "التقييم السُّمّي",
+    text: "تقييم علمي للمخاطر الصحية المحتملة المرتبطة بمنتجاتكم، من المواد الخام إلى التركيبة النهائية.",
   },
   {
     icon: ClipboardCheck,
-    title: "Product Safety Consulting",
-    text: "Preparation and evaluation of safety documentation for cosmetic, chemical and nutraceutical products.",
+    title: "استشارات سلامة المنتجات",
+    text: "إعداد وتقييم وثائق السلامة لمنتجات التجميل والكيميائية والمكملات الغذائية.",
   },
   {
     icon: Scale,
-    title: "Regulatory Consulting",
-    text: "Managing compliance with national and international regulations for pharmaceuticals, medical devices and related sectors.",
+    title: "الاستشارات التنظيمية",
+    text: "إدارة الامتثال للوائح الوطنية والدولية الخاصة بالأدوية والأجهزة الطبية والقطاعات ذات الصلة.",
   },
   {
     icon: Microscope,
-    title: "R&D Consulting",
-    text: "Scientific and technical support throughout your product development lifecycle, from concept to submission.",
+    title: "استشارات البحث والتطوير",
+    text: "دعم علمي وتقني طوال دورة تطوير منتجكم، من الفكرة وحتى التقديم.",
   },
 ];
 
@@ -102,31 +102,29 @@ export default function HomePage() {
 
         <div className="relative max-w-7xl mx-auto px-6 pt-16 pb-20 md:pt-20 md:pb-24 grid md:grid-cols-2 gap-14 items-center">
           <div>
-            <Eyebrow>Toxicology &amp; Product Safety Consulting</Eyebrow>
+            <Eyebrow>استشارات علم السموم وسلامة المنتجات</Eyebrow>
             <h1 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6">
-              <span className="text-navy-deep">Your partner in</span><br />
-              <span className="text-navy-deep">science, </span>
-              <span className="text-green">safety</span>
-              <span className="text-navy-deep">, and approval.</span>
+              <span className="text-navy-deep">شريكك في العلم</span><br />
+              <span className="text-navy-deep"> </span>
+              <span className="text-green">والسلامة</span>
+              <span className="text-navy-deep"> والموافقات التنظيمية.</span>
             </h1>
             <div className="w-14 h-[3px] mb-6 bg-green" />
             <p className="text-slate-600 leading-relaxed mb-8 max-w-lg">
-              TOXENTRA provides toxicology, product safety and scientific
-              consulting for the pharmaceutical, medical device, cosmetic,
-              chemical and nutraceutical industries.
+              تقدّم TOXENTRA خدمات استشارية متخصصة في علم السموم وسلامة المنتجات والشؤون التنظيمية لقطاعات الأدوية والأجهزة الطبية ومستحضرات التجميل والمواد الكيميائية والمكمّلات الغذائية.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
                 href="/ar/contact"
                 className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-white shadow-md transition-transform hover:scale-[1.03] bg-green-dark"
               >
-                Request a Consultation <ArrowRight size={16} />
+                اطلب استشارة <ArrowRight size={16} />
               </Link>
               <Link
                 href="/ar/services"
                 className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold border-2 border-navy text-navy transition-colors hover:bg-white"
               >
-                Explore Our Services
+                استكشف خدماتنا
               </Link>
             </div>
           </div>
@@ -140,11 +138,10 @@ export default function HomePage() {
                 <Image src="/logo.png" alt="TOXENTRA" width={112} height={24} className="h-6 w-auto mb-8" />
 
                 <h3 className="text-xl font-bold font-serif leading-tight tracking-tight mb-2 text-navy-deep">
-                  Your Partner in Science, Safety &amp; Approval
+                  شريكك في العلم والسلامة والموافقات
                 </h3>
                 <p className="text-sm text-slate-500">
-                  Toxicology &amp; regulatory consulting for pharma, medical
-                  devices, cosmetics, chemicals and nutraceuticals.
+                  استشارات في علم السموم والشؤون التنظيمية لقطاعات الأدوية، والأجهزة الطبية، ومستحضرات التجميل، والمواد الكيميائية، والمكمّلات الغذائية.
                 </p>
                 <svg className="absolute bottom-0 left-0 w-full opacity-70" height="60" viewBox="0 0 400 60" preserveAspectRatio="none">
                   <path d="M0,40 C100,10 300,60 400,20 L400,60 L0,60 Z" fill="#2E8B57" opacity="0.15" />
@@ -159,9 +156,9 @@ export default function HomePage() {
       <section className="border-y border-black/5 bg-white/60">
         <div className="max-w-7xl mx-auto px-6 py-16">
           <div className="text-center mb-10">
-            <Eyebrow>Why TOXENTRA</Eyebrow>
+            <Eyebrow>لماذا TOXENTRA؟</Eyebrow>
             <h2 className="text-2xl md:text-3xl font-bold font-serif mt-3 text-navy-deep">
-              A scientific foundation you can build on
+              أساس علمي راسخ يمكنك الاعتماد عليه
             </h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
@@ -184,13 +181,12 @@ export default function HomePage() {
       {/* SERVICES */}
       <section className="max-w-7xl mx-auto px-6 py-20">
         <div className="max-w-2xl mb-12">
-          <Eyebrow>What We Do</Eyebrow>
+          <Eyebrow>ماذا نقدّم؟</Eyebrow>
           <h2 className="text-3xl md:text-[2.25rem] font-bold font-serif mt-3 mb-4 leading-tight text-navy-deep">
-            Services built around your product&apos;s journey
+            خدمات مصمّمة لمواكبة رحلة منتجك
           </h2>
           <p className="text-slate-600 leading-relaxed">
-            From early-stage safety evaluation to final regulatory approval,
-            we bring science and compliance together at every step.
+            من التقييم المبكر للسلامة وحتى الحصول على الموافقات التنظيمية النهائية، نجمع بين العلم والامتثال التنظيمي في كل مرحلة.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-6">
@@ -212,7 +208,7 @@ export default function HomePage() {
             href="/ar/services"
             className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold border-2 border-navy text-navy transition-colors hover:bg-white"
           >
-            View All Services <ArrowRight size={16} />
+            استعرض جميع الخدمات <ArrowRight size={16} />
           </Link>
         </div>
       </section>
@@ -221,24 +217,19 @@ export default function HomePage() {
       <section className="bg-white/60 border-y border-black/5">
         <div className="max-w-7xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-10 items-center">
           <div className="md:col-span-2">
-            <Eyebrow>About TOXENTRA</Eyebrow>
+            <Eyebrow>عن TOXENTRA</Eyebrow>
             <h2 className="text-2xl md:text-3xl font-bold font-serif mt-3 mb-4 leading-tight text-navy-deep">
-              Where scientific rigor meets regulatory requirements.
+              حيث تلتقي الدقة العلمية بالمتطلبات التنظيمية.
             </h2>
             <p className="text-slate-600 leading-relaxed">
-              TOXENTRA brings together toxicological assessment, product safety
-              and scientific evaluation to support evidence-based decisions
-              throughout product development. Our team works alongside
-              R&amp;D, quality and regulatory affairs teams across the
-              pharmaceutical, medical device, cosmetic, chemical and
-              nutraceutical industries.
+              تجمع TOXENTRA بين التقييم السُّمّي وسلامة المنتجات والاستراتيجية التنظيمية، بما يساعد منتجاتك على الوصول إلى السوق بأمان وامتثال كامل للمتطلبات التنظيمية. ويعمل فريقنا جنبًا إلى جنب مع فرق البحث والتطوير والجودة والشؤون التنظيمية في قطاعات الأدوية والأجهزة الطبية ومستحضرات التجميل والمواد الكيميائية والمكمّلات الغذائية.
             </p>
           </div>
           <Link
             href="/ar/about"
             className="inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold border-2 border-navy text-navy transition-colors hover:bg-white self-start md:justify-self-end"
           >
-            More About Us <ArrowRight size={16} />
+            اعرف المزيد عنا <ArrowRight size={16} />
           </Link>
         </div>
       </section>
@@ -247,17 +238,16 @@ export default function HomePage() {
       <section className="bg-navy-deep">
         <div className="max-w-4xl mx-auto px-6 py-16 text-center">
           <h2 className="text-2xl md:text-3xl font-bold font-serif text-white mb-4">
-            Bring your product to market with confidence.
+            أطلق منتجك في السوق بثقة.
           </h2>
           <p className="text-slate-300 mb-8 max-w-xl mx-auto">
-            Tell us about your product and scientific needs— our team will
-            get back to you to schedule a consultation.
+            أخبرنا عن منتجك ومساره التنظيمي، وسيتواصل معك فريقنا لتحديد موعد للاستشارة.
           </p>
           <Link
             href="/ar/contact"
             className="inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-semibold shadow-lg transition-transform hover:scale-[1.03] bg-green text-white"
           >
-            Contact Us <ArrowRight size={16} />
+            تواصل معنا <ArrowRight size={16} />
           </Link>
         </div>
       </section>
