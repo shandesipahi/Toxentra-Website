@@ -1,19 +1,19 @@
-import ContactForm from "../../contact/ContactForm";
+import ContactForm from "./ContactForm";
 import { Mail, MapPin, Clock, MessageCircle, ArrowRight } from "lucide-react";
 import Link from "next/link";
-import Navbar from "../../../components/Navbar";
-import Footer from "../../../components/Footer";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 export const metadata = {
-  title: "اتصل بنا — TOXENTRA",
+  title: "Contact — TOXENTRA",
   description:
-    "هل لديك سؤال أو تحتاج إلى دعم متخصص؟ تواصل مع Toxentra وسيقوم فريقنا بالرد عليك في أقرب وقت ممكن.",
+    "Have a question or need expert support? Reach out to Toxentra and our team will get back to you promptly.",
 };
 
 const contactInfo = [
-  { icon: Mail, title: "البريد الإلكتروني", lines: ["info@toxentra.com"] },
-  { icon: MapPin, title: "الموقع", lines: ["إسطنبول، تركيا"] },
-  { icon: Clock, title: "ساعات العمل", lines: ["Monday – Friday", "09:00 – 17:30 (GMT+3)"] },
+  { icon: Mail, title: "Email", lines: ["info@toxentra.com"] },
+  { icon: MapPin, title: "Location", lines: ["Istanbul, Türkiye"] },
+  { icon: Clock, title: "Business Hours", lines: ["Monday – Friday", "09:00 – 17:30 (GMT+3)"] },
 ];
 
 function Eyebrow({ children }) {
@@ -26,24 +26,24 @@ function Eyebrow({ children }) {
 
 export default function ContactPage() {
   return (
-    <div dir="rtl" lang="ar" className="font-arabic">
     <>
-      <Navbar active="contact" locale="ar" />
+      <Navbar active="Contact" />
 
       <section className="max-w-7xl mx-auto px-6 pt-16 pb-16 grid lg:grid-cols-2 gap-14 items-start">
         {/* Left column */}
         <div>
-          <Eyebrow>تواصل معنا</Eyebrow>
+          <Eyebrow>Contact Us</Eyebrow>
           <h1 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6">
-            <span className="text-navy-deep">لنعمل معًا على</span>
+            <span className="text-navy-deep">Let&apos;s Advance</span>
             <br />
-            <span className="text-green">تعزيز سلامة</span>
+            <span className="text-green">Product Safety</span>
             <br />
-            <span className="text-navy-deep">المنتجات.</span>
+            <span className="text-navy-deep">Together.</span>
           </h1>
           <div className="w-14 h-[3px] mb-6 bg-green" />
           <p className="text-slate-600 leading-relaxed max-w-sm mb-10">
-            هل لديك سؤال أو تحتاج إلى دعم من الخبراء؟ نحن هنا لمساعدتك. تواصل معنا وسيرد عليك فريقنا في أقرب وقت ممكن.
+            Have a question or need expert support? We&apos;re here to help.
+            Reach out to us and our team will get back to you promptly.
           </p>
 
           <div className="space-y-7">
@@ -69,7 +69,7 @@ export default function ContactPage() {
         </div>
 
         {/* Right column — form (client component) */}
-        <ContactForm locale="ar" />
+        <ContactForm />
       </section>
 
       {/* SECONDARY CTA STRIP */}
@@ -81,10 +81,11 @@ export default function ContactPage() {
             </div>
             <div>
               <h3 className="font-semibold text-lg mb-1 font-serif text-navy-deep">
-                هل تفضّل مناقشة احتياجاتك مباشرةً؟
+                Prefer to discuss your needs?
               </h3>
               <p className="text-sm text-slate-600 max-w-md">
-                اطلب استشارة وسيتواصل معك خبراؤنا لفهم احتياجاتك وتحديد أفضل السبل لدعم أهدافك.
+                Request a consultation and our experts will contact you to
+                understand how we can support your goals.
               </p>
             </div>
           </div>
@@ -92,13 +93,12 @@ export default function ContactPage() {
             href="#form"
             className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold border-2 border-green text-green-dark shrink-0 transition-colors hover:bg-white"
           >
-            اطلب استشارة <ArrowRight size={16} />
+            Request a Consultation <ArrowRight size={16} />
           </Link>
         </div>
       </section>
 
-      <Footer locale="ar" />
+      <Footer />
     </>
-    </div>
   );
 }
