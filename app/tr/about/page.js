@@ -250,7 +250,7 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-slate-600 leading-relaxed text-sm">
               <p>
-                TOXENTRA, farmasötik toksikoloji alanında 20 yılı aşkın akademik ve sektörel deneyime sahip Prof. Dr. Hande Sipahi, PhD, ERT, ATS tarafından kurulmuştur.
+                Toxentra, akademi ve sanayi alanlarında 20 yılı aşkın deneyime sahip bir toksikoloji uzmanı tarafından kurulmuştur.
               </p>
               <p>
                 Ürünleri pazara sunmanın karmaşıklığını — ve her adımda güvenlilik değerlendirmesinin kritik önemini — biliyoruz.
