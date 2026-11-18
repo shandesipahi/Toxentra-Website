@@ -258,7 +258,8 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-slate-600 leading-relaxed text-sm">
               <p>
-                TOXENTRA was founded by Prof. Dr. Hande Sipahi, PhD, ERT, ATS, a pharmaceutical toxicologist with over 20 years of academic and industry experience.
+                Toxentra was founded by a toxicology expert with over 20 years of
+                experience in academia and industry.
               </p>
               <p>
                 We understand the complexity of bringing products to
