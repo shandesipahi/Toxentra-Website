@@ -126,27 +126,12 @@ export default function AboutPage() {
       {/* HERO */}
       <section className="max-w-7xl mx-auto px-6 pt-16 pb-20 grid md:grid-cols-2 gap-14 items-center">
         <div>
-          <Eyebrow>ABOUT TOXENTRA</Eyebrow>
-          <h1 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6">
-            <span className="text-navy-deep">Independent Science.</span>
-            <br />
-            <span className="text-navy-deep">Evidence-Based Solutions.</span>
-            <br />
-            <span className="text-green">Safer Products.</span>
-          </h1>
-          <div className="w-14 h-[3px] mb-6 bg-green" />
-          <p className="text-slate-600 leading-relaxed mb-5">
-            Toxentra is an independent toxicology consulting company dedicated to
-            advancing product safety through a scientific approach,
-            evidence-based decision-making, and alignment with international
-            regulations.
-          </p>
-          <p className="text-slate-600 leading-relaxed">
-            We support pharmaceutical, medical device, cosmetics, chemical
-            and biotechnology companies throughout the product
-            lifecycle—from product development and testing strategies to
-            toxicological risk assessment and safety evaluation.
-          </p>
+          <div className="flex gap-5">
+            <div className="w-1 rounded-full shrink-0 bg-green" />
+            <p className="text-2xl md:text-3xl font-serif leading-snug text-navy-deep">
+              TOXENTRA was founded by Prof. Dr. Hande Sipahi, PhD, ERT, ATS, a pharmaceutical toxicologist with over 20 years of academic and industry experience.
+            </p>
+          </div>
         </div>
 
         <div
@@ -210,6 +195,33 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* ABOUT TOXENTRA (moved below founder statement) */}
+      <section className="max-w-7xl mx-auto px-6 pb-20">
+        <div className="max-w-3xl">
+          <Eyebrow>ABOUT TOXENTRA</Eyebrow>
+          <h1 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6">
+            <span className="text-navy-deep">Independent Science.</span>
+            <br />
+            <span className="text-navy-deep">Evidence-Based Solutions.</span>
+            <br />
+            <span className="text-green">Safer Products.</span>
+          </h1>
+          <div className="w-14 h-[3px] mb-6 bg-green" />
+          <p className="text-slate-600 leading-relaxed mb-5">
+            Toxentra is an independent toxicology consulting company dedicated to
+            advancing product safety through a scientific approach,
+            evidence-based decision-making, and alignment with international
+            regulations.
+          </p>
+          <p className="text-slate-600 leading-relaxed">
+            We support pharmaceutical, medical device, cosmetics, chemical
+            and biotechnology companies throughout the product
+            lifecycle—from product development and testing strategies to
+            toxicological risk assessment and safety evaluation.
+          </p>
+        </div>
+      </section>
+
       {/* MISSION / VISION / VALUES */}
       <section className="max-w-7xl mx-auto px-6 pb-20 grid md:grid-cols-3 gap-10">
         <div>
@@ -257,10 +269,6 @@ export default function AboutPage() {
               Science at the Core, Impact in Every Decision.
             </h2>
             <div className="space-y-4 text-slate-600 leading-relaxed text-sm">
-              <p>
-                Toxentra was founded by a toxicology expert with over 20 years of
-                experience in academia and industry.
-              </p>
               <p>
                 We understand the complexity of bringing products to
                 market—and the critical importance of safety assessment at
