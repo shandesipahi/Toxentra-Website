@@ -110,13 +110,13 @@ export default function AboutPage() {
       {/* FOUNDER */}
       <section className="relative max-w-7xl mx-auto px-6 pt-16">
         <Eyebrow>ABOUT US · OUR FOUNDER</Eyebrow>
-        <h1 className="text-4xl md:text-6xl leading-[1.1] font-bold font-serif mt-3 mb-6 text-navy-deep max-w-4xl">
+        <h1 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6 text-navy-deep max-w-3xl">
           Founded by a toxicologist. Built on two decades of{" "}
           <span className="text-green">science</span>.
         </h1>
         <div className="w-14 h-[3px] mb-14 bg-green" />
 
-        <div className="grid md:grid-cols-[420px_1fr] gap-12 lg:gap-20 items-center pb-20">
+        <div className="grid md:grid-cols-[320px_1fr] gap-10 lg:gap-16 items-center pb-20">
           <div>
             <div className="relative">
               <Image
@@ -131,12 +131,12 @@ export default function AboutPage() {
           </div>
 
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold font-serif text-navy-deep">
+            <h2 className="text-2xl md:text-3xl font-bold font-serif text-navy-deep">
               Prof. Dr. Hande Sipahi
               <span className="text-green">, PhD, ERT, ATS</span>
             </h2>
-            <p className="text-green font-medium mt-1 mb-6">Founder &amp; Scientific Director</p>
-            <p className="text-slate-600 leading-[1.9] text-[1.05rem] mb-8">
+            <p className="text-green font-medium text-sm mt-1 mb-5">Founder &amp; Scientific Director</p>
+            <p className="text-slate-600 leading-relaxed mb-8">
               Prof. Dr. Hande Sipahi is the <strong className="font-semibold text-navy-deep">Founder and Scientific Director of TOXENTRA</strong>, with <strong className="font-semibold text-navy-deep">over 20 years of academic and pharmaceutical industry experience in toxicology</strong>. She currently serves as <strong className="font-semibold text-navy-deep">Head of the Department of Toxicology at the University of Health Sciences, Faculty of Pharmacy</strong>. Her primary areas of expertise include <strong className="font-semibold text-navy-deep">toxicological risk assessment, product safety, biocompatibility, and pharmacovigilance</strong>. She is a <strong className="font-semibold text-navy-deep">European Registered Toxicologist (ERT)</strong> and a <strong className="font-semibold text-navy-deep">Fellow of the Academy of Toxicological Sciences (ATS)</strong>.
             </p>
             <ul className="flex flex-col items-start gap-3 mb-10">
