@@ -111,8 +111,8 @@ export default function AboutPage() {
       <section className="relative max-w-7xl mx-auto px-6 pt-16">
         <Eyebrow>HAKKIMIZDA · KURUCUMUZ</Eyebrow>
         <h1 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6 text-navy-deep max-w-3xl">
-          Bir toksikolog tarafından kuruldu. İki on yıllık bilimin üzerine{" "}
-          <span className="text-green">inşa edildi</span>.
+          Bir toksikoloğun öncülüğünde, 20 yılı aşkın{" "}
+          <span className="text-green">bilimsel birikim ve deneyimle</span> kuruldu.
         </h1>
         <div className="w-14 h-[3px] mb-14 bg-green" />
 
