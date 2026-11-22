@@ -16,6 +16,10 @@ import {
   Share2,
   MessageCircle,
   GraduationCap,
+  Check,
+  Pill,
+  HeartPulse,
+  Sparkles,
 } from "lucide-react";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
@@ -35,30 +39,10 @@ const values = [
 ];
 
 const stats = [
-  {
-    icon: Users,
-    big: "20+",
-    label: "عامًا من الخبرة المشتركة",
-    text: "خبرة واسعة في علم السموم.",
-  },
-  {
-    icon: FlaskConical,
-    big: "مئات",
-    label: "التقييمات العلمية للسلامة",
-    text: "في مجالات الأدوية والأجهزة الطبية ومستحضرات التجميل والمواد الكيميائية.",
-  },
-  {
-    icon: ShieldCheck,
-    big: "معتمد من ERT",
-    label: "اختصاصي سموم أوروبي مسجّل",
-    text: "اعتماد مهني معترف به في أوروبا.",
-  },
-  {
-    icon: Globe2,
-    big: "ATS",
-    label: "Academy of Toxicological Sciences Fellow",
-    text: "وفقًا لإرشادات EMA وFDA وOECD وICH وISO وSCCS وغيرها من الإرشادات الدولية.",
-  },
+  { icon: Pill, big: "الأدوية" },
+  { icon: HeartPulse, big: "الأجهزة الطبية" },
+  { icon: Sparkles, big: "مستحضرات التجميل" },
+  { icon: FlaskConical, big: "المواد الكيميائية والمكمّلات الغذائية" },
 ];
 
 const whatWeDo = [
@@ -124,20 +108,103 @@ export default function AboutPage() {
     <>
       <Navbar active="about" locale="ar" />
 
-      {/* HERO */}
-      <section className="max-w-7xl mx-auto px-6 pt-16 pb-20 grid md:grid-cols-2 gap-14 items-center">
+      {/* FOUNDER */}
+      <section className="relative max-w-7xl mx-auto px-6 pt-16">
+        <Eyebrow>من نحن · مؤسِّسة الشركة</Eyebrow>
+        <h1 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6 text-navy-deep max-w-3xl">
+          أسّستها اختصاصية في علم السموم، وبُنيت على عقدين من{" "}
+          <span className="text-green">العلم</span>.
+        </h1>
+        <div className="w-14 h-[3px] mb-14 bg-green" />
+
+        <div className="grid md:grid-cols-[320px_1fr] gap-10 lg:gap-16 items-center pb-20">
+          <div>
+            <div className="relative">
+              <Image
+                src="/hande-sipahi.jpg"
+                alt="Prof. Dr. Hande Sipahi"
+                width={782}
+                height={984}
+                priority
+                className="relative w-full h-auto rounded-2xl shadow-xl object-cover"
+              />
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-2xl md:text-3xl font-bold font-serif text-navy-deep">
+              البروفيسورة الدكتورة هانده سيباهي،{" "}
+              <span className="text-green" dir="ltr">PhD, ERT, ATS</span>
+            </h2>
+            <p className="text-green font-medium text-sm mt-1 mb-5">المؤسِّسة والمديرة العلمية</p>
+            <p className="text-slate-600 leading-relaxed mb-8">
+              البروفيسورة الدكتورة هانده سيباهي هي <strong className="font-semibold text-navy-deep">المؤسِّسة والمديرة العلمية لشركة TOXENTRA</strong>، وتتمتع بـ<strong className="font-semibold text-navy-deep">خبرة تزيد على 20 عامًا في المجالين الأكاديمي والصناعي في علم السموم الصيدلاني</strong>. وتشغل حاليًا منصب <strong className="font-semibold text-navy-deep">رئيسة قسم علم السموم في كلية الصيدلة بجامعة العلوم الصحية</strong>. وتشمل مجالات خبرتها الرئيسية <strong className="font-semibold text-navy-deep">تقييم المخاطر السُّمّية، وسلامة المنتجات، والتوافق الحيوي، واليقظة الدوائية</strong>. وهي <strong className="font-semibold text-navy-deep">اختصاصية سموم أوروبية مسجّلة (ERT)</strong> و<strong className="font-semibold text-navy-deep">زميلة في Academy of Toxicological Sciences (ATS)</strong>.
+            </p>
+            <ul className="flex flex-col items-start gap-3 mb-10">
+              {[
+                "اختصاصية سموم أوروبية مسجّلة (ERT)",
+                "زميلة في Academy of Toxicological Sciences (ATS)",
+                "عضوة سابقة في لجنة التقييم السريري التابعة لـ TİTCK",
+                "عضوة في EUROTOX وIUTOX والجمعية التركية لعلم السموم",
+              ].map((b) => (
+                <li
+                  key={b}
+                  className="flex items-center gap-2 rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-navy-deep"
+                >
+                  <Check size={16} className="text-green shrink-0" />
+                  {b}
+                </li>
+              ))}
+            </ul>
+            <Link
+              href="/ar/contact#form"
+              className="inline-flex items-center gap-2 rounded-full bg-green-dark px-7 py-3.5 text-sm font-semibold text-white hover:opacity-90 transition"
+            >
+              اطلب استشارة <ArrowRight size={16} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* الإنجازات العلمية */}
+      <section className="bg-navy-deep">
+        <div className="max-w-7xl mx-auto px-6 py-16">
+          <div className="text-xs tracking-[0.2em] font-semibold text-[#7ED3A0] mb-10">
+            الإنجازات العلمية
+          </div>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10">
+            {[
+              ["150+", "منشورات علمية محكّمة"],
+              ["30+", "مشروع بحثي"],
+              ["100+", "تقييم علمي للسلامة"],
+              ["20+", "عامًا من الخبرة الأكاديمية والصناعية"],
+            ].map(([n, l], i) => (
+              <div key={l} className={`px-6 ${i > 0 ? "lg:border-l lg:border-white/20" : ""}`}>
+                <div dir="ltr" className="text-5xl md:text-6xl font-bold font-serif text-white text-right">
+                  {n.replace("+", "")}
+                  <span className="text-[#4FBF80]">+</span>
+                </div>
+                <div className="text-slate-300 mt-2">{l}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ABOUT TOXENTRA (moved below founder) */}
+      <section className="max-w-7xl mx-auto px-6 pt-20 pb-20 grid md:grid-cols-2 gap-14 items-center">
         <div>
           <Eyebrow>عن TOXENTRA</Eyebrow>
-          <h1 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6">
+          <h2 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6">
             <span className="text-navy-deep">علم مستقل.</span>
             <br />
             <span className="text-navy-deep">حلول قائمة على الأدلة.</span>
             <br />
             <span className="text-green">منتجات أكثر أمانًا.</span>
-          </h1>
+          </h2>
           <div className="w-14 h-[3px] mb-6 bg-green" />
           <p className="text-slate-600 leading-relaxed mb-5">
-            س شركة استشارية مستقلة متخصصة في علم السموم، تكرّس خبرتها لتعزيز سلامة المنتجات من خلال نهج علمي، واتخاذ القرارات القائمة على الأدلة، والمواءمة مع المتطلبات التنظيمية الدولية.
+            Toxentra هي شركة استشارية مستقلة متخصصة في علم السموم، تكرّس خبرتها لتعزيز سلامة المنتجات من خلال نهج علمي، واتخاذ القرارات القائمة على الأدلة، والمواءمة مع المتطلبات التنظيمية الدولية.
           </p>
           <p className="text-slate-600 leading-relaxed">
             ندعم شركات الأدوية، والأجهزة الطبية، ومستحضرات التجميل، والمواد الكيميائية، والتكنولوجيا الحيوية طوال دورة حياة المنتج، بدءًا من تطوير المنتجات ووضع استراتيجيات الاختبار، وصولًا إلى تقييم المخاطر السُّمّية وتقييم السلامة.
@@ -250,9 +317,6 @@ export default function AboutPage() {
               العلم في جوهر عملنا، والأثر في كل قرار.
             </h2>
             <div className="space-y-4 text-slate-600 leading-relaxed text-sm">
-              <p>
-                تأسست س على يد خبير في علم السموم يتمتع بخبرة تزيد على 20 عامًا في الأوساط الأكاديمية والصناعة.
-              </p>
               <p>
                 ندرك تعقيدات طرح المنتجات في الأسواق، والأهمية البالغة لتقييم السلامة في كل مرحلة.
               </p>
