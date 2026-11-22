@@ -16,6 +16,10 @@ import {
   Share2,
   MessageCircle,
   GraduationCap,
+  Check,
+  Pill,
+  HeartPulse,
+  Sparkles,
 } from "lucide-react";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
@@ -35,30 +39,10 @@ const values = [
 ];
 
 const stats = [
-  {
-    icon: Users,
-    big: "20+",
-    label: "Toplam Deneyim Yılı",
-    text: "Toksikoloji alanında kapsamlı deneyim.",
-  },
-  {
-    icon: FlaskConical,
-    big: "Yüzlerce",
-    label: "Bilimsel Güvenlilik Değerlendirmesi",
-    text: "İlaç, tıbbi cihaz, kozmetik ve kimyasallar genelinde.",
-  },
-  {
-    icon: ShieldCheck,
-    big: "ERT",
-    label: "Avrupa Kayıtlı Toksikolog Yetkisi",
-    text: "Avrupa'da tanınan profesyonel yeterlilik",
-  },
-  {
-    icon: Globe2,
-    big: "ATS",
-    label: "Academy of Toxicological Sciences Fellow",
-    text: "EMA, FDA, OECD, ICH, ISO, SCCS ve diğer uluslararası kılavuzlar.",
-  },
+  { icon: Pill, big: "İlaç" },
+  { icon: HeartPulse, big: "Tıbbi Cihaz" },
+  { icon: Sparkles, big: "Kozmetik" },
+  { icon: FlaskConical, big: "Kimyasallar ve Nutrasötikler" },
 ];
 
 const whatWeDo = [
@@ -123,17 +107,100 @@ export default function AboutPage() {
     <>
       <Navbar active="about" locale="tr" />
 
-      {/* HERO */}
-      <section className="max-w-7xl mx-auto px-6 pt-16 pb-20 grid md:grid-cols-2 gap-14 items-center">
+      {/* FOUNDER */}
+      <section className="relative max-w-7xl mx-auto px-6 pt-16">
+        <Eyebrow>HAKKIMIZDA · KURUCUMUZ</Eyebrow>
+        <h1 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6 text-navy-deep max-w-3xl">
+          Bir toksikolog tarafından kuruldu. İki on yıllık bilimin üzerine{" "}
+          <span className="text-green">inşa edildi</span>.
+        </h1>
+        <div className="w-14 h-[3px] mb-14 bg-green" />
+
+        <div className="grid md:grid-cols-[320px_1fr] gap-10 lg:gap-16 items-center pb-20">
+          <div>
+            <div className="relative">
+              <Image
+                src="/hande-sipahi.jpg"
+                alt="Prof. Dr. Hande Sipahi"
+                width={782}
+                height={984}
+                priority
+                className="relative w-full h-auto rounded-2xl shadow-xl object-cover"
+              />
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-2xl md:text-3xl font-bold font-serif text-navy-deep">
+              Prof. Dr. Hande Sipahi
+              <span className="text-green">, PhD, ERT, ATS</span>
+            </h2>
+            <p className="text-green font-medium text-sm mt-1 mb-5">Kurucu ve Bilimsel Direktör</p>
+            <p className="text-slate-600 leading-relaxed mb-8">
+              <strong className="font-semibold text-navy-deep">Farmasötik toksikoloji alanında 20 yılı aşkın akademik ve sektörel deneyime sahip olan</strong> Prof. Dr. Hande Sipahi, <strong className="font-semibold text-navy-deep">TOXENTRA’nın kurucusu ve bilimsel direktörüdür</strong>. <strong className="font-semibold text-navy-deep">Sağlık Bilimleri Üniversitesi Eczacılık Fakültesi Toksikoloji Anabilim Dalı Başkanı</strong> olarak görev yapan Sipahi’nin başlıca uzmanlık alanları <strong className="font-semibold text-navy-deep">toksikolojik risk değerlendirmesi, ürün güvenliliği, biyouyumluluk ve farmakovijilanstan</strong> oluşmaktadır. <strong className="font-semibold text-navy-deep">Avrupa Kayıtlı Toksikolog (ERT)</strong> unvanına sahip olup <strong className="font-semibold text-navy-deep">Academy of Toxicological Sciences (ATS) Fellow’udur</strong>.
+            </p>
+            <ul className="flex flex-col items-start gap-3 mb-10">
+              {[
+                "Avrupa Kayıtlı Toksikolog (ERT)",
+                "Academy of Toxicological Sciences (ATS) Fellow’u",
+                "TİTCK Klinik Değerlendirme Komisyonu eski üyesi",
+                "EUROTOX, IUTOX ve Türk Toksikoloji Derneği üyesi",
+              ].map((b) => (
+                <li
+                  key={b}
+                  className="flex items-center gap-2 rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-navy-deep"
+                >
+                  <Check size={16} className="text-green shrink-0" />
+                  {b}
+                </li>
+              ))}
+            </ul>
+            <Link
+              href="/tr/contact#form"
+              className="inline-flex items-center gap-2 rounded-full bg-green-dark px-7 py-3.5 text-sm font-semibold text-white hover:opacity-90 transition"
+            >
+              Danışmanlık Talep Edin <ArrowRight size={16} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* BİLİMSEL BAŞARILAR */}
+      <section className="bg-navy-deep">
+        <div className="max-w-7xl mx-auto px-6 py-16">
+          <div className="text-xs tracking-[0.2em] font-semibold text-[#7ED3A0] mb-10">
+            BİLİMSEL BAŞARILAR
+          </div>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10">
+            {[
+              ["150+", "Hakemli yayın"],
+              ["30+", "Araştırma projesi"],
+              ["100+", "Bilimsel güvenlilik değerlendirmesi"],
+              ["20+", "Yıllık akademik ve sektörel deneyim"],
+            ].map(([n, l], i) => (
+              <div key={l} className={`px-6 ${i > 0 ? "lg:border-l lg:border-white/20" : ""}`}>
+                <div className="text-5xl md:text-6xl font-bold font-serif text-white">
+                  {n.replace("+", "")}
+                  <span className="text-[#4FBF80]">+</span>
+                </div>
+                <div className="text-slate-300 mt-2">{l}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ABOUT TOXENTRA (moved below founder) */}
+      <section className="max-w-7xl mx-auto px-6 pt-20 pb-20 grid md:grid-cols-2 gap-14 items-center">
         <div>
           <Eyebrow>Toxentra Hakkında</Eyebrow>
-          <h1 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6">
+          <h2 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6">
             <span className="text-navy-deep">Bağımsız Bilim.</span>
             <br />
             <span className="text-navy-deep">Kanıta Dayalı Çözümler.</span>
             <br />
             <span className="text-green">Daha Güvenli Ürünler.</span>
-          </h1>
+          </h2>
           <div className="w-14 h-[3px] mb-6 bg-green" />
           <p className="text-slate-600 leading-relaxed mb-5">
             Toxentra; bilimsel yaklaşım, kanıta dayalı karar alma ve uluslararası regülasyonlar doğrultusunda ürün güvenliğini geliştirmeyi amaçlayan bağımsız bir toksikoloji danışmanlık şirketidir.
@@ -249,9 +316,6 @@ export default function AboutPage() {
               Merkezde Bilim, Her Kararda Etki.
             </h2>
             <div className="space-y-4 text-slate-600 leading-relaxed text-sm">
-              <p>
-                Toxentra, akademi ve sanayi alanlarında 20 yılı aşkın deneyime sahip bir toksikoloji uzmanı tarafından kurulmuştur.
-              </p>
               <p>
                 Ürünleri pazara sunmanın karmaşıklığını — ve her adımda güvenlilik değerlendirmesinin kritik önemini — biliyoruz.
               </p>
