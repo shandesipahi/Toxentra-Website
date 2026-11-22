@@ -16,6 +16,10 @@ import {
   Share2,
   MessageCircle,
   GraduationCap,
+  Check,
+  Pill,
+  HeartPulse,
+  Sparkles,
 } from "lucide-react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
@@ -35,30 +39,10 @@ const values = [
 ];
 
 const stats = [
-  {
-    icon: Users,
-    big: "20+",
-    label: "Years of Combined Experience",
-    text: "Extensive experience in toxicology.",
-  },
-  {
-    icon: FlaskConical,
-    big: "Hundreds",
-    label: "Scientific Safety Assessments",
-    text: "Across pharmaceuticals, medical devices, cosmetics and chemicals.",
-  },
-  {
-    icon: ShieldCheck,
-    big: "ERT",
-    label: "European Registered Toxicologist",
-    text: "Recognized professional certification in Europe.",
-  },
-  {
-    icon: Globe2,
-    big: "ATS",
-    label: "Academy of Toxicological Sciences Fellow",
-    text: "EMA, FDA, OECD, ICH, ISO, SCCS and other international guidelines.",
-  },
+  { icon: Pill, big: "Pharmaceuticals" },
+  { icon: HeartPulse, big: "Medical Devices" },
+  { icon: Sparkles, big: "Cosmetics" },
+  { icon: FlaskConical, big: "Chemicals & Nutraceuticals" },
 ];
 
 const whatWeDo = [
@@ -123,15 +107,113 @@ export default function AboutPage() {
     <>
       <Navbar active="About Us" />
 
-      {/* HERO */}
-      <section className="max-w-7xl mx-auto px-6 pt-16 pb-20 grid md:grid-cols-2 gap-14 items-center">
-        <div>
-          <div className="flex gap-5">
-            <div className="w-1 rounded-full shrink-0 bg-green" />
-            <p className="text-2xl md:text-3xl font-serif leading-snug text-navy-deep">
-              TOXENTRA was founded by Prof. Dr. Hande Sipahi, PhD, ERT, ATS, a pharmaceutical toxicologist with over 20 years of academic and industry experience.
-            </p>
+      {/* FOUNDER */}
+      <section className="relative max-w-7xl mx-auto px-6 pt-16">
+        <Eyebrow>ABOUT US · OUR FOUNDER</Eyebrow>
+        <h1 className="text-4xl md:text-6xl leading-[1.1] font-bold font-serif mt-3 mb-6 text-navy-deep max-w-4xl">
+          Founded by a toxicologist. Built on two decades of{" "}
+          <span className="text-green">science</span>.
+        </h1>
+        <div className="w-14 h-[3px] mb-14 bg-green" />
+
+        <div className="grid md:grid-cols-[420px_1fr] gap-12 lg:gap-20 items-center pb-20">
+          <div>
+            <div className="relative">
+              <Image
+                src="/hande-sipahi.jpg"
+                alt="Prof. Dr. Hande Sipahi"
+                width={782}
+                height={984}
+                priority
+                className="relative w-full h-auto rounded-2xl shadow-xl object-cover"
+              />
+            </div>
           </div>
+
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold font-serif text-navy-deep">
+              Prof. Dr. Hande Sipahi
+              <span className="text-green">, PhD, ERT, ATS</span>
+            </h2>
+            <p className="text-green font-medium mt-1 mb-6">Founder &amp; Scientific Director</p>
+            <p className="text-slate-600 leading-[1.9] text-[1.05rem] mb-8">
+              Prof. Dr. Hande Sipahi is the <strong className="font-semibold text-navy-deep">Founder and Scientific Director of TOXENTRA</strong>, with <strong className="font-semibold text-navy-deep">over 20 years of academic and pharmaceutical industry experience in toxicology</strong>. She currently serves as <strong className="font-semibold text-navy-deep">Head of the Department of Toxicology at the University of Health Sciences, Faculty of Pharmacy</strong>. Her primary areas of expertise include <strong className="font-semibold text-navy-deep">toxicological risk assessment, product safety, biocompatibility, and pharmacovigilance</strong>. She is a <strong className="font-semibold text-navy-deep">European Registered Toxicologist (ERT)</strong> and a <strong className="font-semibold text-navy-deep">Fellow of the Academy of Toxicological Sciences (ATS)</strong>.
+            </p>
+            <ul className="flex flex-col items-start gap-3 mb-10">
+              {[
+                "European Registered Toxicologist (ERT)",
+                "Fellow, Academy of Toxicological Sciences (ATS)",
+                "Former TİTCK Clinical Evaluation Commission member",
+                "Member of EUROTOX, IUTOX & Turkish Society of Toxicology",
+              ].map((b) => (
+                <li
+                  key={b}
+                  className="flex items-center gap-2 rounded-full border border-slate-300 bg-white px-4 py-2 text-sm font-medium text-navy-deep"
+                >
+                  <Check size={16} className="text-green shrink-0" />
+                  {b}
+                </li>
+              ))}
+            </ul>
+            <Link
+              href="/contact#form"
+              className="inline-flex items-center gap-2 rounded-full bg-green-dark px-7 py-3.5 text-sm font-semibold text-white hover:opacity-90 transition"
+            >
+              Request a Consultation <ArrowRight size={16} />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* SCIENTIFIC ACHIEVEMENTS */}
+      <section className="bg-navy-deep">
+        <div className="max-w-7xl mx-auto px-6 py-16">
+          <div className="text-xs tracking-[0.2em] font-semibold text-[#7ED3A0] mb-10">
+            SCIENTIFIC ACHIEVEMENTS
+          </div>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-10">
+            {[
+              ["150+", "Peer-reviewed publications"],
+              ["30+", "Research projects"],
+              ["100+", "Scientific safety assessments"],
+              ["20+", "Years of academic & industry experience"],
+            ].map(([n, l], i) => (
+              <div key={l} className={`px-6 ${i > 0 ? "lg:border-l lg:border-white/20" : ""}`}>
+                <div className="text-5xl md:text-6xl font-bold font-serif text-white">
+                  {n.replace("+", "")}
+                  <span className="text-[#4FBF80]">+</span>
+                </div>
+                <div className="text-slate-300 mt-2">{l}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ABOUT TOXENTRA (moved below founder) */}
+      <section className="max-w-7xl mx-auto px-6 pt-20 pb-20 grid md:grid-cols-2 gap-14 items-center">
+        <div>
+          <Eyebrow>ABOUT TOXENTRA</Eyebrow>
+          <h2 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6">
+            <span className="text-navy-deep">Independent Science.</span>
+            <br />
+            <span className="text-navy-deep">Evidence-Based Solutions.</span>
+            <br />
+            <span className="text-green">Safer Products.</span>
+          </h2>
+          <div className="w-14 h-[3px] mb-6 bg-green" />
+          <p className="text-slate-600 leading-relaxed mb-5">
+            Toxentra is an independent toxicology consulting company dedicated to
+            advancing product safety through a scientific approach,
+            evidence-based decision-making, and alignment with international
+            regulations.
+          </p>
+          <p className="text-slate-600 leading-relaxed">
+            We support pharmaceutical, medical device, cosmetics, chemical
+            and biotechnology companies throughout the product
+            lifecycle—from product development and testing strategies to
+            toxicological risk assessment and safety evaluation.
+          </p>
         </div>
 
         <div
@@ -192,33 +274,6 @@ export default function AboutPage() {
               );
             })}
           </div>
-        </div>
-      </section>
-
-      {/* ABOUT TOXENTRA (moved below founder statement) */}
-      <section className="max-w-7xl mx-auto px-6 pb-20">
-        <div className="max-w-3xl">
-          <Eyebrow>ABOUT TOXENTRA</Eyebrow>
-          <h1 className="text-4xl md:text-[2.75rem] leading-[1.15] font-bold font-serif mt-3 mb-6">
-            <span className="text-navy-deep">Independent Science.</span>
-            <br />
-            <span className="text-navy-deep">Evidence-Based Solutions.</span>
-            <br />
-            <span className="text-green">Safer Products.</span>
-          </h1>
-          <div className="w-14 h-[3px] mb-6 bg-green" />
-          <p className="text-slate-600 leading-relaxed mb-5">
-            Toxentra is an independent toxicology consulting company dedicated to
-            advancing product safety through a scientific approach,
-            evidence-based decision-making, and alignment with international
-            regulations.
-          </p>
-          <p className="text-slate-600 leading-relaxed">
-            We support pharmaceutical, medical device, cosmetics, chemical
-            and biotechnology companies throughout the product
-            lifecycle—from product development and testing strategies to
-            toxicological risk assessment and safety evaluation.
-          </p>
         </div>
       </section>
 
